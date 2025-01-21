@@ -1,7 +1,7 @@
 export const dropdown = {
   solutions: [
     {
-      path: 'http://localhost:5173/solutions/mobile-banking-solutions',
+      path: '/solutions/mobile-banking-solutions',
       label: 'Mobile Banking Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/banking.e69a3089.webp',
       description: 'Seamless banking on-the-go with secure transactions and features.',
@@ -13,13 +13,13 @@ export const dropdown = {
       description: 'Fast and affordable international money transfers made easy.',
     },
     {
-      path: 'https://appdevs.net/solutions/digital-wallet-solutions',
+      path: '/solutions/digital-wallet-solutions',
       label: 'Digital Wallet Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/ewallet.895ba4bb.webp',
       description: 'Secure digital wallet for effortless payments and fund management.',
     },
     {
-      path: 'https://appdevs.net/solutions/white-label-payment-gateway-solutions',
+      path: '/solutions/white-label-payment-gateway-solutions',
       label: 'Payment Gateway Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/gateway.8cb0c27e.webp',
       description: 'Reliable payment processing for online transactions and businesses.',

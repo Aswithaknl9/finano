@@ -2,18 +2,22 @@ import React from 'react';
 import one from '../assets/one.png'; 
 import footerBackground from '../assets/footerBg.png'; 
 import Icon from './icon';
+import PaymentLogo from './PaymentLogo';
+import SubscribeSection from './SubcribeSection';
 
 const Footer = () => {
   return (
+    <>
+    <SubscribeSection />
     <div
-      className="bg-cover bg-center  text-black py-12 px-10"
+      className="bg-cover bg-center  text-black py-12 px-10 "
       style={{
         backgroundImage: `
           linear-gradient(110deg, rgba(183, 203, 255, 0.34), rgba(255, 249, 242, 0.4) 50%, rgba(183, 203, 255, 0.48)),
           url(${footerBackground})
         `}}
     >
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
+      <div className="container mx-auto grid grid-cols-1 pt-40 sm:grid-cols-2 lg:grid-cols-5 gap-12">
         <div>
           <div className="flex items-center space-x-3 mb-6 mt">
             <img src={one} alt="Site Logo" className="w-20" />
@@ -111,13 +115,13 @@ const Footer = () => {
             <a href="/privacy-policy" className="mr-4">Privacy Policy</a>
             <a href="/terms" className="mr-4">Terms Of Conditions</a>
             <a href="/installation-policy" className="mr-4">Installation Policy</a>
-            <a href="/gdpr" className="mr-4">GDPR</a>
-            <a href="/success-payment" className="mr-4">Success Payment</a>
-            <a href="/stripe" className="mr-4">Stripe</a>
           </div>
+          <PaymentLogo />
         </div>
+       
       </div>
     </div>
+    </>
   );
 };
 

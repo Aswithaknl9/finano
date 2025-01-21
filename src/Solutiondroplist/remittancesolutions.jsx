@@ -1,18 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Bankingcard from '../mbsPages/Bankingcard';
-import ForBankAdmins from '../mbsPages/ForBankAdmins';
-import ForEndUsers from '../mbsPages/ForEndUsers';
-import RevenueStrategies from '../mbsPages/RevenueStrategies';
-import Startbusiness from '../mbsPages/startbusiness';
-import RequirementsSection from '../mbsPages/RequirementsSection';
 import TechnologyStack from '../mbsPages/TechnologyStack';
-import ProductSection from '../mbsPages/ProductSection';
+import ProductSection1 from '../remitPages/ProductSection1';
 import BenefitsSection from '../mbsPages/BenefitsSection';
 import CallToActionSection from '../mbsPages/CallToActionSection';
+import Bankingcard1 from '../remitPages/Bankingcard1';
+import AdminsFeatures from '../remitPages/AdminsFeatures';
+import UIFeatures from '../remitPages/UIFeatures';
+import RevenueStrategies1 from '../remitPages/RevenueStrategies1';
+import StartBusiness1 from '../remitPages/Startbusiness1';
+import RequirementsSection1 from '../remitPages/RequirementsSection1';
 
-const MobileBankSolution = () => {
+const remittancesolutions = () => {
   return (
     <section className='pt-32 relative'>
       <div
@@ -26,13 +26,13 @@ const MobileBankSolution = () => {
       >
         <div className="text-center max-w-[700px] mx-auto p-8 z-10">
           <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
-            DIGITAL MOBILE BANKING SOLUTIONS
+          REMITTANCE SOLUTIONS
           </span>
-          <h1 className="text-5xl font-semibold md:mb-6">
-            A Comprehensive Guide to Mobile Banking Solutions
+          <h1 className="text-6xl font-semibold md:mb-6">
+          Empowering Seamless Global Money Transfers
           </h1>
           <p className="text-[#6B7280] text-[15px] mb-6">
-            This guide explores the fundamentals of mobile banking solutions, including their key features, the problems they solve, profitability strategies for banks and entrepreneurs, and the necessary steps for launching a mobile banking platform.
+          Unlock the future of international remittance with our cutting-edge Cross Border Remittance Solutions. Designed to simplify global transactions, our solution ensures fast, secure, and cost-effective money transfers for individuals, businesses, and financial institutions. Elevate your financial operations, meet compliance effortlessly, and provide an unmatched experience to your users.
           </p>
           <div className="flex space-x-4 justify-center">
             <a 
@@ -44,7 +44,7 @@ const MobileBankSolution = () => {
             </a>
             <a 
               className="border-2 border-[#2974E7] text-[#2974E7] font-semibold px-6 py-2 rounded-md text-center hover:bg-[#7C3AED] hover:border-[#7C3AED] hover:text-white transition duration-300" 
-              href="#product"
+              href="/product"
               aria-label="See Product on Mobile Banking"
             >
               See Product on Mobile Banking
@@ -55,37 +55,37 @@ const MobileBankSolution = () => {
       <section className="pt-16 mx-6 px-4 ">
         <div className="max-w-4xl mx-auto text-center p-6">
           <h1 className="text-5xl font-semibold  mb-4">
-            What Problems Does a Mobile Banking Solution Solve?
+          What Problems Does a Cross Border Remittance Solution Solve?
           </h1>
         </div>
-        <Bankingcard />
+        <Bankingcard1 />
       </section>
       <section className='pt-14 mx-6 px-4'>
         <div className="max-w-4xl mx-auto text-center p-6">
-          <h1 className="text-5xl font-semibold  mb-4 " >Key Features of a Robust Mobile <span className='text-[#7C3AED]'>Banking Solution</span></h1>
-          <p className='text-[#6B7280]'>A comprehensive mobile banking platform should cater to both administrative needs for the bank and functional needs for the end users, ensuring a secure and user-friendly experience for all.</p>
+          <h1 className="text-5xl font-semibold  mb-4 " >Key Features of a Cross Border<span className='text-[#7C3AED]'>Remittance Solution</span></h1>
+          <p className='text-[#6B7280]'>A comprehensive remittance solutions platform should cater to both administrative needs for the bank and functional needs for the end users, ensuring a secure and user-friendly experience for all.</p>
         </div>
           <div className="container mx-auto p-5">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
-              <ForBankAdmins />
-              <ForEndUsers />
+              <div className="grid lg:grid-cols-2 grid-cols-1 mx-20 gap-5">
+              <AdminsFeatures />
+              <UIFeatures />
             </div>
           </div>
       </section>
       <section className='pt-14 mx-40'>
-        <div className=" text-center bg-[#EBF2FD] rounded-3xl p-6">
-          <h1 className="text-5xl font-semibold  mb-4 " >How Can Bank Owners Generate Profit from a  <span className='text-[#7C3AED]'>Mobile Banking Solution?</span></h1>
-        <RevenueStrategies />
+        <div className=" text-center bg-[#EBF2FD] px-8 py-10 rounded-[50px] p-6">
+          <h1 className="text-4xl tex-[48px] font-semibold  mb-2" >How Can Bank Owners Generate Profit from a Cross Border <span className='text-[#7C3AED]'>Remittance Solution?</span></h1>
+        <RevenueStrategies1 />
         </div>
       </section>
-      <Startbusiness />
-      <RequirementsSection />
+      <StartBusiness1 />
+      <RequirementsSection1 />
       <TechnologyStack />
-      <ProductSection />
+      <ProductSection1 />
       <BenefitsSection />
       <CallToActionSection />
     </section>
   );
 };
 
-export default MobileBankSolution;
+export default remittancesolutions;

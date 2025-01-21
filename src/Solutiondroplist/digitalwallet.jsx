@@ -1,18 +1,23 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Bankingcard from '../mbsPages/Bankingcard';
-import ForBankAdmins from '../mbsPages/ForBankAdmins';
-import ForEndUsers from '../mbsPages/ForEndUsers';
-import RevenueStrategies from '../mbsPages/RevenueStrategies';
-import Startbusiness from '../mbsPages/startbusiness';
-import RequirementsSection from '../mbsPages/RequirementsSection';
 import TechnologyStack from '../mbsPages/TechnologyStack';
-import ProductSection from '../mbsPages/ProductSection';
+import ProductSection1 from '../remitPages/ProductSection1';
 import BenefitsSection from '../mbsPages/BenefitsSection';
 import CallToActionSection from '../mbsPages/CallToActionSection';
+import Bankingcard2 from '../digitalPages/Bankingcard2';
+import AdminsFeatures from '../remitPages/AdminsFeatures';
+import UIFeatures from '../remitPages/UIFeatures';
+import RevenueStrategies1 from '../remitPages/RevenueStrategies1';
+import StartBusiness1 from '../remitPages/Startbusiness1';
+import RequirementsSection1 from '../remitPages/RequirementsSection1';
+import AdminsFeatures1 from '../digitalPages/AdminsFeatures1';
+import RevenueStrategies2 from '../digitalPages/RevenueStrategies2';
+import StartBusiness2 from '../digitalPages/StartBusiness2';
+import RequirementsSection2 from '../digitalPages/RequirementsSection2';
+import ProductSection2 from '../digitalPages/ProductSection2';
 
-const MobileBankSolution = () => {
+const digitalwallet = () => {
   return (
     <section className='pt-32 relative'>
       <div
@@ -26,13 +31,13 @@ const MobileBankSolution = () => {
       >
         <div className="text-center max-w-[700px] mx-auto p-8 z-10">
           <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
-            DIGITAL MOBILE BANKING SOLUTIONS
+          DIGITAL WALLET SOLUTIONS
           </span>
           <h1 className="text-5xl font-semibold md:mb-6">
-            A Comprehensive Guide to Mobile Banking Solutions
+          Transform Payments with Advanced E-Wallet Solutions
           </h1>
           <p className="text-[#6B7280] text-[15px] mb-6">
-            This guide explores the fundamentals of mobile banking solutions, including their key features, the problems they solve, profitability strategies for banks and entrepreneurs, and the necessary steps for launching a mobile banking platform.
+          Revolutionize the way users transact with our feature-rich E-Wallet Solutions. From secure online payments to seamless fund transfers, our solution empowers businesses, banks, and users to enjoy a cashless, hassle-free experience. Simplify money management, improve customer satisfaction, and enhance your financial ecosystem with our innovative digital wallet platform.
           </p>
           <div className="flex space-x-4 justify-center">
             <a 
@@ -55,37 +60,37 @@ const MobileBankSolution = () => {
       <section className="pt-16 mx-6 px-4 ">
         <div className="max-w-4xl mx-auto text-center p-6">
           <h1 className="text-5xl font-semibold  mb-4">
-            What Problems Does a Mobile Banking Solution Solve?
+          What Problems Does an E-Wallet Solution Solve?
           </h1>
         </div>
-        <Bankingcard />
+        <Bankingcard2 />
       </section>
       <section className='pt-14 mx-6 px-4'>
         <div className="max-w-4xl mx-auto text-center p-6">
-          <h1 className="text-5xl font-semibold  mb-4 " >Key Features of a Robust Mobile <span className='text-[#7C3AED]'>Banking Solution</span></h1>
-          <p className='text-[#6B7280]'>A comprehensive mobile banking platform should cater to both administrative needs for the bank and functional needs for the end users, ensuring a secure and user-friendly experience for all.</p>
+          <h1 className="text-5xl font-semibold  mb-4 " >Key Features of an <span className='text-[#7C3AED]'>E-Wallet Solution</span></h1>
+          <p className='text-[#6B7280]'>A comprehensive e-wallet platform should cater to both administrative needs for the bank and functional needs for the end users, ensuring a secure and user-friendly experience for all.</p>
         </div>
           <div className="container mx-auto p-5">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
-              <ForBankAdmins />
-              <ForEndUsers />
+              <div className="grid lg:grid-cols-2 grid-cols-1 mx-20 gap-5">
+              <AdminsFeatures1 />
+              <UIFeatures />
             </div>
           </div>
       </section>
       <section className='pt-14 mx-40'>
-        <div className=" text-center bg-[#EBF2FD] rounded-3xl p-6">
-          <h1 className="text-5xl font-semibold  mb-4 " >How Can Bank Owners Generate Profit from a  <span className='text-[#7C3AED]'>Mobile Banking Solution?</span></h1>
-        <RevenueStrategies />
+        <div className=" text-center bg-[#EBF2FD] px-8 py-10 rounded-[50px] p-6">
+          <h1 className="text-4xl tex-[48px] font-semibold  mb-2" >How Can Bank Owners Generate Profit from a Cross Border <span className='text-[#7C3AED]'>E-Wallet Solution?</span></h1>
+        <RevenueStrategies2 />
         </div>
       </section>
-      <Startbusiness />
-      <RequirementsSection />
+      <StartBusiness2 />
+      <RequirementsSection2 />
       <TechnologyStack />
-      <ProductSection />
+      <ProductSection2 />
       <BenefitsSection />
       <CallToActionSection />
     </section>
   );
 };
 
-export default MobileBankSolution;
+export default digitalwallet;
