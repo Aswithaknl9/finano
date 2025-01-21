@@ -1,6 +1,7 @@
 import React from 'react';
 import one from '../assets/one.png'; 
 import footerBackground from '../assets/footerBg.png'; 
+import Icon from './icon';
 
 const Footer = () => {
   return (
@@ -28,6 +29,7 @@ const Footer = () => {
               <p>Dhaka, Bangladesh</p>
             </div>
           </div>
+          <Icon />
         </div>
 
         

@@ -1,74 +1,46 @@
-import React from 'react';
-import Card from '../component/Card';
-import remittance from '../assets/remittance.png';
-import mobileBanking from '../assets/mobileBanking.png';
-import digital from '../assets/digitalWallet.png';
-import currency from '../assets/currencyExchange.png';
-import crowd from '../assets/crowdFunding.png';
-import pay from '../assets/paymentGateway.png';
-import solutionBg from '../assets/solutionBg.png';
+import React from "react";
+import SolutionCard from "../component/solutioncard"; 
+import solutionimg from "../Js/solutionimg"; 
 
 const Solutions = () => {
   return (
-    <div 
-      className="grid gap-6 p-6 bg-cover bg-center bg-no-repeat min-h-screen" 
-      style={{ backgroundImage: `url(${solutionBg})`, height: '100%', width: '100%' }}
-    >
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-        <Card 
-          imgSrc="https://appdevs.net/_next/static/media/remittance.6985c065.webp"
-          imgAlt="Mobile Banking Solutions"
-          title="Mobile Banking Solutions" 
-          description="Seamless banking on-the-go with secure transactions and features."
-          link="Cardpage"
-        />
-        <Card 
-          imgSrc="https://appdevs.net/_next/static/media/mobileBanking.26967535.webp"
-          imgAlt="Remittance Solutions"
-          title="Remittance Solutions"
-          description="Fast and affordable international money transfers made easy."
-          link="Cardpage"
-        />
-        <Card 
-          imgSrc={digital}
-          imgAlt="Digital Wallet Solutions"
-          title="Digital Wallet Solutions"
-          description="Secure digital wallet for effortless payments and fund management."
-          link="Cardpage"
-        />
-        <Card 
-          imgSrc={pay}
-          imgAlt="Payment Gateway Solutions"
-          title="Payment Gateway Solutions"
-          description="Reliable payment processing for online transactions and businesses."
-          link="Cardpage"
-        />
+    <div className="relative">
+      <div 
+        className="bg-cover bg-no-repeat bg-left flex items-center justify-center"
+        style={{
+          backgroundImage: 'url(https://appdevs.net/_next/static/media/servicePageBgLeft.292df356.webp), url(https://appdevs.net/_next/static/media/servicePageBgRight.e134874f.webp)',
+          backgroundPosition: 'left top, right top',
+          backgroundSize: 'contain',
+          height: '600px', 
+        }}
+      >
+        <div className="text-center max-w-[700px] mx-auto p-8 z-10">
+          <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
+            Solutions
+          </span>
+          <h1 className="text-5xl font-semibold md:mb-6">
+            Explore Solutions That Boost Your Business
+          </h1>
+          <p className="text-[#6B7280] text-[15px] mb-6">
+            Discover a wide range of solutions specifically designed to address your business challenges. Learn how our innovative offerings work to optimize processes and accelerate your business growth effectively.
+          </p>
+        </div>
       </div>
-      
-    
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
-        <Card 
-          imgSrc={currency}
-          imgAlt="Currency Exchange Solutions"
-          title="Currency Exchange Solutions"
-          description="Real-time currency conversion for global transactions at competitive rates."
-          link="Cardpage"
-        />
-        <Card 
-          imgSrc={currency}
-          imgAlt="Currency Exchange Solutions"
-          title="Currency Exchange Solutions"
-          description="Real-time currency conversion for global transactions at competitive rates."
-          link="Cardpage"
-        />
-        <Card 
-          imgSrc={crowd}
-          imgAlt="Crowdfunding Solutions"
-          title="Crowdfunding Solutions"
-          description="Effective platform for raising funds and supporting projects with ease."
-          link="Cardpage"
-        />
+      <div 
+        id="services" 
+        className="flex flex-wrap gap-16 justify-center z-20 relative"
+        style={{ transform: 'translateY(-250px)' }}  
+      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-9 px-6 py-6 m-44">
+        {solutionimg.map((solution, index) => (
+          <SolutionCard
+            key={index}
+            image={solution.image}
+            title={solution.title}
+            description={solution.description}
+          />
+        ))}
+      </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Blogg from './Blogg';
 const Blog = () => {
   return (
     <div className="flex flex-col items-center min-h-screen">
-      <div className="text-center max-w-2xl p-8">
+      <div className="text-center max-w-2xl p-8 mt-24">
         <span className="text-lg text-green-800 bg-green-200 rounded-lg text-[10px] px-3 py-1">
           Our Blog
         </span>

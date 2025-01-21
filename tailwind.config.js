@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         'footer-gradient': 'linear-gradient(110deg, rgba(183, 203, 255, .34), rgba(255, 249, 242, .4) 50%, rgba(183, 203, 255, .48))', 
+        'backgroundimg': 'linear-gradient(90deg, #031530, #174181)'
       },
     },
   },

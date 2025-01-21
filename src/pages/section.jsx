@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section = () => {
   return (
-    <div className='flex flex-col lg:flex-row items-start justify-start mt-[50px]'>
+    <div className='flex flex-col lg:flex-row items-start justify-start mt-[50px] mx-28'>
       
       <div className='lg:w-1/2 w-full'>
         <div className='md:col-span-6 col-span-10 text-left'>
