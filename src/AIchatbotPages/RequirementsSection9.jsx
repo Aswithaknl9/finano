@@ -1,15 +1,14 @@
 import React from 'react';
 
-const RequirementsSection2 = () => {
+const RequirementsSection9 = () => {
   return (
     <section>
       <div className="xl:max-w-[1280px] container mx-auto px-4">
         <div className="section_header lg:mb-12 mb-8">
           <div className="max-w-[775px] mx-auto text-center">
-            <h2 className="mb-4 text-5xl font-semibold text-black">Requirements for Launching an E-Wallet Solution</h2>
+            <h2 className="mb-4 text-5xl font-semibold text-black">Requirements for Launching an AI Chatbot Solution</h2>
             <p className="lg:w-[80%] mx-auto text-base text-[#6B7280]">
-            To successfully launch a e-wallet platform, consider these essential requirements
-            </p>
+            To successfully launch a AI chatbot platform, consider these essential requirements</p>
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-5 gap-4">
@@ -19,9 +18,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">1</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Licenses and Permits</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">AI Development Expertise</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Obtain necessary approvals to operate in your target region.</p>
+            <p className="text-[#6B7280] text-[15px]">Employ skilled developers or partner with a chatbot development platform.</p>
           </div>
           {/* Step 2 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -29,9 +28,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">2</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Secure Infrastructure</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Business-Specific Data</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Set up robust servers and encryption protocols for data protection.</p>
+            <p className="text-[#6B7280] text-[15px]">Gather and organize data to train the chatbot effectively.</p>
           </div>
           {/* Step 3 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -39,9 +38,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">3</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Payment Gateway Integrations</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Scalable IT Infrastructure</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Partner with banks, payment processors, and global providers.</p>
+            <p className="text-[#6B7280] text-[15px]">Ensure the platform supports trusted payment providers for smooth transactions.</p>
           </div>
           {/* Step 4 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -49,9 +48,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">4</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">User-Friendly Applications</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Integration Capabilities</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Develop web and mobile interfaces with responsive designs.</p>
+            <p className="text-[#6B7280] text-[15px]">Ensure the chatbot integrates seamlessly with existing business tools and systems.</p>
           </div>
           {/* Step 5 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -59,9 +58,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">5</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Marketing Strategy</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Legal and Privacy Compliance</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Create campaigns to drive user adoption and awareness.</p>
+            <p className="text-[#6B7280] text-[15px]">Adhere to data protection laws like GDPR to maintain customer trust.</p>
           </div>
           {/* Step 6 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -69,9 +68,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">6</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Dedicated Support Team</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Continuous Support and Maintenance</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Set up a responsive team to handle technical and customer queries.</p>
+            <p className="text-[#6B7280] text-[15px]">Provide regular updates and troubleshooting to keep the chatbot running smoothly.</p>
           </div>
         </div>
       </div>
@@ -79,4 +78,4 @@ const RequirementsSection2 = () => {
   );
 };
 
-export default RequirementsSection2;
+export default RequirementsSection9;

@@ -10,6 +10,14 @@ import Services from './pages/Services';
 import MobileBankingSolution from './Solutiondroplist/mobliebanksolution'; 
 import RemittanceSolution from './Solutiondroplist/remittancesolutions' ;
 import DigitalWallet from './Solutiondroplist/digitalwallet';
+import PaymentGateway from './Solutiondroplist/paymentgateway';
+import CurrencyExchange from './Solutiondroplist/CurrencyExchange';
+import CardIssuing from './Solutiondroplist/CardIssuing';
+import CrowdFunding from './Solutiondroplist/CrowdFunding';
+import InvestmentManagement from './Solutiondroplist/InvestmentManagement';
+import Escrow from './Solutiondroplist/Escrow';
+import AIchatbot from './Solutiondroplist/AIchatbot';
+import OnlineBooking from './Solutiondroplist/OnlineBooking';
 
 const App = () => {
   return (
@@ -24,6 +32,14 @@ const App = () => {
         <Route path="/solutions/mobile-banking-solutions" element={<MobileBankingSolution />} />
         <Route path="/solutions/remittance-solution" element={<RemittanceSolution />} /> 
         <Route path="/solutions/digital-wallet-solutions" element={<DigitalWallet />} />
+        <Route path='/solutions/white-label-payment-gateway-solutions' element={<PaymentGateway />} />
+        <Route path='/solutions/currency-exchange-solutions' element={<CurrencyExchange />} />
+        <Route path='/solutions/card-issuing-solutions' element={<CardIssuing />} />
+        <Route path='/solutions/crowdfunding-solutions' element={<CrowdFunding />} />
+        <Route path='/solutions/investment-management-solutions' element={<InvestmentManagement />} />
+        <Route path='/solutions/escrow-solutions' element={<Escrow />} />
+        <Route path='/solutions/ai-chatbot-solutions' element={<AIchatbot />} />
+        <Route path='/solutions/online-booking-solutions' element={<OnlineBooking />} />
       </Routes>
       <Footer />
     </Router>

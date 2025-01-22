@@ -1,14 +1,14 @@
 import React from 'react';
 
-const RequirementsSection2 = () => {
+const RequirementsSection4 = () => {
   return (
     <section>
       <div className="xl:max-w-[1280px] container mx-auto px-4">
         <div className="section_header lg:mb-12 mb-8">
           <div className="max-w-[775px] mx-auto text-center">
-            <h2 className="mb-4 text-5xl font-semibold text-black">Requirements for Launching an E-Wallet Solution</h2>
+            <h2 className="mb-4 text-5xl font-semibold text-black">Requirements for Launching a Currency Exchange Solution</h2>
             <p className="lg:w-[80%] mx-auto text-base text-[#6B7280]">
-            To successfully launch a e-wallet platform, consider these essential requirements
+            To successfully launch a currency exchange platform, consider these essential requirements
             </p>
           </div>
         </div>
@@ -21,7 +21,7 @@ const RequirementsSection2 = () => {
               </div>
               <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Licenses and Permits</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Obtain necessary approvals to operate in your target region.</p>
+            <p className="text-[#6B7280] text-[15px]">Secure licenses for currency exchange operations in your target regions.</p>
           </div>
           {/* Step 2 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -29,9 +29,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">2</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Secure Infrastructure</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Technological Infrastructure</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Set up robust servers and encryption protocols for data protection.</p>
+            <p className="text-[#6B7280] text-[15px]">Set up secure servers, APIs, and real-time rate updating systems.</p>
           </div>
           {/* Step 3 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -39,9 +39,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">3</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Payment Gateway Integrations</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Regulatory Compliance</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Partner with banks, payment processors, and global providers.</p>
+            <p className="text-[#6B7280] text-[15px]">Implement robust KYC, AML, and data protection measures.</p>
           </div>
           {/* Step 4 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -49,9 +49,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">4</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">User-Friendly Applications</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Banking and Forex Partnerships</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Develop web and mobile interfaces with responsive designs.</p>
+            <p className="text-[#6B7280] text-[15px]">Collaborate with financial institutions for liquidity and global reach.</p>
           </div>
           {/* Step 5 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -59,9 +59,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">5</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Marketing Strategy</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Customer Support Team</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Create campaigns to drive user adoption and awareness.</p>
+            <p className="text-[#6B7280] text-[15px]">Provide responsive support for users to resolve issues effectively.</p>
           </div>
           {/* Step 6 */}
           <div className="bg-gray-50 xl:rounded-[20px] rounded-3xl xl:py-5 py-4 xl:px-8 px-5">
@@ -69,9 +69,9 @@ const RequirementsSection2 = () => {
               <div className="xl:w-12 w-8 xl:h-12 h-8 bg-white rounded-full flex justify-center items-center">
                 <span className="text-blue-600 xl:text-[26px] font-bold">6</span>
               </div>
-              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Dedicated Support Team</h5>
+              <h5 className="ms-3 xl:text-[20px] text-lg font-semibold">Marketing and Branding</h5>
             </div>
-            <p className="text-[#6B7280] text-[15px]">Set up a responsive team to handle technical and customer queries.</p>
+            <p className="text-[#6B7280] text-[15px]">Develop campaigns to build trust and attract customers to your solution.</p>
           </div>
         </div>
       </div>
@@ -79,4 +79,4 @@ const RequirementsSection2 = () => {
   );
 };
 
-export default RequirementsSection2;
+export default RequirementsSection4;

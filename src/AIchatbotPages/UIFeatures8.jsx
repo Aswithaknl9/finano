@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UIFeatures2 = () => {
+const UIFeatures8 = () => {
   return (
     <div>
       <div className="text-center rounded-[20px] px-3 lg:pt-12 pt-6 lg:pb-16 pb-12 mb-[-30px] bg-[#EDE9FE]">
@@ -13,54 +13,54 @@ const UIFeatures2 = () => {
               <div className="w-[36px] h-[36px] flex items-center justify-center bg-white shadow-lg rounded-full">
                 <img alt="Account Overview"  src="https://appdevs.net/_next/static/media/userInterface.7a544d13.png" style={{ color: 'transparent' }} />
               </div>
-              <h5 className="ms-2 font-semibold text-[18px]">Instant Money Transfers</h5>
+              <h5 className="ms-2 font-semibold text-[18px]">Real-Time Chat</h5>
             </div>
-            <p className="text-[#6B7280] text-[14px] ">Send and receive money instantly within the wallet ecosystem.</p>
+            <p className="text-[#6B7280] text-[14px] ">Engage users with live, instant messaging capabilities.</p>
           </li>
           <li className="bg-white rounded-[20px] shadow-lg bg-white__color p-5">
             <div className="flex items-center mb-3">
               <div className="w-[36px] h-[36px] flex items-center justify-center bg-white shadow-lg rounded-full">
                 <img alt="Fund Transfers"  src="https://appdevs.net/_next/static/media/functionality.9491eef9.png" style={{ color: 'transparent' }} />
               </div>
-              <h5 className="ms-2 font-semibold text-[18px]">Payment Options</h5>
+              <h5 className="ms-2 font-semibold text-[18px]">Natural Language Processing (NLP)</h5>
             </div>
-            <p className="text-[#6B7280] text-[14px]">Pay bills, shop online, or make in-store purchases with QR codes and NFC.</p>
+            <p className="text-[#6B7280] text-[14px]">Understand and respond to queries in human-like language.</p>
           </li>
           <li className="bg-white rounded-[20px] shadow-lg bg-white__color p-5">
             <div className="flex items-center mb-3">
               <div className="w-[36px] h-[36px] flex items-center justify-center bg-white shadow-lg rounded-full">
                 <img alt="Bill Payment Services"  src="https://appdevs.net/_next/static/media/userManagementFlow.32a3674f.png" style={{ color: 'transparent' }} />
               </div>
-              <h5 className="ms-2 font-semibold text-[18px]">Fund Management</h5>
+              <h5 className="ms-2 font-semibold text-[18px]">Personalized Conversations</h5>
             </div>
-            <p className="text-[#6B7280] text-[14px] ">Add money to the wallet or withdraw funds effortlessly.</p>
+            <p className="text-[#6B7280] text-[14px] ">Tailor responses based on user preferences and past interactions.</p>
           </li>
           <li className="bg-white rounded-[20px] shadow-lg bg-white__color p-5">
             <div className="flex items-center mb-3">
               <div className="w-[36px] h-[36px] flex items-center justify-center bg-white shadow-lg rounded-full">
                 <img alt="Digital Wallet and Virtual Card Access"src="https://appdevs.net/_next/static/media/securityControlsFlow.3e22a078.png" style={{ color: 'transparent' }} />
               </div>
-              <h5 className="ms-2 font-semibold text-[18px]">Savings and Goals</h5>
+              <h5 className="ms-2 font-semibold text-[18px]">Voice Assistance</h5>
             </div>
-            <p className="text-[#6B7280] text-[14px] ">Set financial goals and allocate funds for future use.</p>
+            <p className="text-[#6B7280] text-[14px] ">Provide voice-enabled chatbot features for enhanced accessibility.</p>
           </li>
           <li className="bg-white rounded-[20px] shadow-lg bg-white__color p-5">
             <div className="flex items-center mb-3">
               <div className="w-[36px] h-[36px] flex items-center justify-center bg-white shadow-lg rounded-full">
                 <img alt="QR Code Payments" src="https://appdevs.net/_next/static/media/analyticsAndInsights.51b867cc.png" style={{ color: 'transparent' }} />
               </div>
-              <h5 className="ms-2 font-semibold text-[18px]">Multi-Language and Currency Support</h5>
+              <h5 className="ms-2 font-semibold text-[18px]">Seamless Handover to Humans</h5>
             </div>
-            <p className="text-[#6B7280] text-[14px] ">Cater to diverse user bases with global language and currency options.</p>
+            <p className="text-[#6B7280] text-[14px] ">Transfer complex queries to human agents without disrupting the conversation.</p>
           </li>
           <li className="bg-white rounded-[20px] shadow-lg bg-white__color p-5">
             <div className="flex items-center mb-3">
               <div className="w-[36px] h-[36px] flex items-center justify-center bg-white shadow-lg rounded-full">
                 <img alt="Account Overview"  src="https://appdevs.net/_next/static/media/userInterface.7a544d13.png" style={{ color: 'transparent' }} />
               </div>
-              <h5 className="ms-2 font-semibold text-[18px]">Personalized Alerts and Notifications</h5>
+              <h5 className="ms-2 font-semibold text-[18px]">Feedback Collection</h5>
             </div>
-            <p className="text-[#6B7280] text-[14px]">Stay updated with transaction notifications and spending insights.</p>
+            <p className="text-[#6B7280] text-[14px]">Gather user feedback directly within the chat interface to improve services.</p>
           </li>
         </ul>
       </div>
@@ -68,4 +68,4 @@ const UIFeatures2 = () => {
   );
 };
 
-export default UIFeatures2;
+export default UIFeatures8;
