@@ -5,54 +5,63 @@ export const dropdown = {
       label: 'Mobile Banking Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/banking.e69a3089.webp',
       description: 'Seamless banking on-the-go with secure transactions and features.',
+      bgColor: '#cff5ff'
     },
     {
       path: '/solutions/remittance-solution',
       label: 'Remittance Solution',
       imgSrc: 'https://appdevs.net/_next/static/media/remittance.2deba4fe.webp',
       description: 'Fast and affordable international money transfers made easy.',
+      bgColor: '#d4e3ff'
     },
     {
       path: '/solutions/digital-wallet-solutions',
       label: 'Digital Wallet Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/ewallet.895ba4bb.webp',
       description: 'Secure digital wallet for effortless payments and fund management.',
+      bgColor:'#f1ebff'
     },
     {
       path: '/solutions/white-label-payment-gateway-solutions',
       label: 'Payment Gateway Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/gateway.8cb0c27e.webp',
       description: 'Reliable payment processing for online transactions and businesses.',
+      bgColor: '#e8e6ff'
     },
     {
       path: '/solutions/currency-exchange-solutions',
       label: 'Currency Exchange Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/currency.10929134.webp',
       description: 'Real-time currency conversion for global transactions at competitive rates.',
+      bgColor:'#26bb6a30'
     },
     {
       path: '/solutions/card-issuing-solutions',
       label: 'Card Issuing Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/card.671ccf61.webp',
       description: 'Custom card solutions tailored for businesses and brands.',
+      bgColor:'#eae8ff'
     },
     {
       path: '/solutions/crowdfunding-solutions',
       label: 'Crowdfunding Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/crowdfunding.71986069.webp',
       description: 'Effective platform for raising funds and supporting projects with ease.',
+      bgColor:'#dbd1ff'
     },
     {
       path: '/solutions/investment-management-solutions',
       label: 'Investment Management Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/investment.62dde5d8.webp',
       description: 'Comprehensive tools for effective portfolio management and growth.',
+      bgColor:'#d5deff'
     },
     {
       path: '/solutions/escrow-solutions',
       label: 'Escrow Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/escrow.91ac97eb.webp',
       description: 'Secure transactions with trusted escrow services for peace of mind.',
+      bgColor:'#e1eaff'
     },
 
     {
@@ -60,6 +69,7 @@ export const dropdown = {
       label: 'AI Chatbot Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/ai.e374991b.webp',
       description: 'Intelligent chatbot solutions for enhanced customer service and engagement.',
+      bgColor:'#dee9ff'
     },
 
     {
@@ -67,6 +77,7 @@ export const dropdown = {
       label: 'Online Booking Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/booking.fcfcb951.webp',
       description: 'Streamlined booking system for appointments and reservations.',
+      bgColor:'#2a2a2a29'
     },
 
     {
@@ -74,6 +85,7 @@ export const dropdown = {
       label: 'Multi-Vendor Solutions',
       imgSrc: 'https://appdevs.net/_next/static/media/vendor.dde80811.webp',
       description: 'Flexible platform for multiple sellers to showcase and sell products.',
+      bgColor:'#c6e9ff'
     },
 
 

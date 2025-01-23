@@ -14,7 +14,7 @@ const Solutions = () => {
           height: '600px', 
         }}
       >
-        <div className="text-center max-w-[700px] mx-auto p-8 z-10">
+        <div className="text-center max-w-[700px] mx-auto p- z-10">
           <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
             Solutions
           </span>

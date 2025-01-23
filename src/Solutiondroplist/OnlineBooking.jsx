@@ -4,13 +4,13 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import TechnologyStack from '../mbsPages/TechnologyStack';
 import BenefitsSection from '../mbsPages/BenefitsSection';
 import CallToActionSection from '../mbsPages/CallToActionSection';
-import UIFeatures8 from '../AIchatbotPages/UIFeatures8';
-import RevenueStrategies9 from '../AIchatbotPages/RevenueStrategies9';
-import StartBusiness9 from '../AIchatbotPages/StartBusiness9';
-import RequirementsSection9 from '../AIchatbotPages/RequirementsSection9';
-import ProductSection9 from '../AIchatbotPages/ProductSection9';
 import Bankingcard10 from '../OnlineBookingPages/Bankingcard10';
 import AdminsFeatures9 from '../OnlineBookingPages/AdminsFeatures9';
+import UIFeatures9 from '../OnlineBookingPages/UIFeatures9';
+import RevenueStrategies10 from '../OnlineBookingPages/RevenueStrategies10';
+import StartBusiness10 from '../OnlineBookingPages/StartBusiness10';
+import RequirementsSection10 from '../OnlineBookingPages/RequirementsSection10';
+import ProductSection10 from '../OnlineBookingPages/ProductSection10';
 
 const OnlineBooking = () => {
   return (
@@ -69,20 +69,20 @@ const OnlineBooking = () => {
           <div className="container mx-auto p-5">
               <div className="grid lg:grid-cols-2 grid-cols-1 mx-20 gap-5">
               <AdminsFeatures9 />
-              <UIFeatures8 />
+              <UIFeatures9 />
             </div>
           </div>
       </section>
       <section className='pt-14 mx-40'>
         <div className=" text-center bg-[#EBF2FD] px-8 py-10 rounded-[50px] p-6">
-          <h1 className="text-4xl tex-[48px] font-semibold  mb-2" >How Can Bank Owners Generate Profit from an <span className='text-[#7C3AED]'>AI Chatbot Solution?</span></h1>
-        <RevenueStrategies9 />
+          <h1 className="text-4xl tex-[48px] font-semibold  mb-2" >How Can Business Owners Generate Profit from an<span className='text-[#7C3AED]'>Appointment and Booking Solution?</span></h1>
+        <RevenueStrategies10 />
         </div>
       </section>
-      <StartBusiness9 />
-      <RequirementsSection9 />
+      <StartBusiness10 />
+      <RequirementsSection10 />
       <TechnologyStack />
-      <ProductSection9 />
+      <ProductSection10 />
       <BenefitsSection />
       <CallToActionSection />
     </section>

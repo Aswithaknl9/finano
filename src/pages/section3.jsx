@@ -1,8 +1,9 @@
 import React from 'react';
-import ProductGrid from './ProductGrid';
+import ProductGrid from './ProductGrid'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import ReviewSection from './ReviewSection'; 
 
 const Section3 = () => {
   return (
@@ -29,6 +30,7 @@ const Section3 = () => {
               See What People Are Saying About Us
             </h2>
           </div>
+          <ReviewSection />
         </div>
 
         {/* Updated Background Image Section */}
