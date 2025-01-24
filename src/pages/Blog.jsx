@@ -35,7 +35,7 @@ const Blog = () => {
           <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
             Our Blog
           </span>
-          <h1 className="text-4xl font-bold text-[50px] my-4">
+          <h1 className="font-semibold text-[48px] my-4">
             Explore our insights and case studies
           </h1>
           <p className="text-gray-700 text-[15px] mb-6">
