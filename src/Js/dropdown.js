@@ -92,7 +92,7 @@ export const dropdown = {
   ],
   services: [
     {
-      path: '/services/service-1',
+      path: '/services/installation-service',
       label: 'Installation & Deployment',
       imgSrc: 'https://appdevs.net/_next/static/media/installation.6b01dece.webp',
       description: 'Smooth installation and deployment for seamless FinTech system integration.',

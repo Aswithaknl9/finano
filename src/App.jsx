@@ -19,6 +19,7 @@ import Escrow from './Solutiondroplist/Escrow';
 import AIchatbot from './Solutiondroplist/AIchatbot';
 import OnlineBooking from './Solutiondroplist/OnlineBooking';
 import MultiVendor from './Solutiondroplist/MultiVendor';
+import Installation from './Servicesdropdownlist/Installation';
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
         <Route path='/solutions/ai-chatbot-solutions' element={<AIchatbot />} />
         <Route path='/solutions/online-booking-solutions' element={<OnlineBooking />} />
         <Route path='/solutions/multi-vendor-solutions' element={<MultiVendor />} />
+        <Route path='/services/installation-service' element={<Installation />} />
       </Routes>
       <Footer />
     </Router>

@@ -29,6 +29,7 @@ const Navbar = () => {
             <Dropdown title="Company" links={dropdown.company} />
             <Dropdown title="Help" links={dropdown.help} />
           </ul>
+          
         </div>
 
         {isMobileMenuOpen && (

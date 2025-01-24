@@ -46,7 +46,7 @@ const Dropdown = ({ title, links }) => {
       </NavLink>
       <FontAwesomeIcon
         icon={faChevronDown}
-        className={`ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
+        className={`ml-2 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'} text-sm`}
       />
 
       {/* Dropdown Content */}
