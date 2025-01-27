@@ -4,17 +4,17 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const SolutionCard = ({ image, title, description }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-1 max-w-[400px]">
+    <div className="bg-white shadow-md rounded-[20px] p-2 max-w-[350px] w-full">
       <div className="bg-white rounded-lg">
         <img
           src={image}
           alt={title}
-          className="w-full p-5 h-50 bg-[#F3F4F6] object-cover rounded-t-lg"
+          className="w-full p-12 h-50 bg-[#F3F4F6] object-cover rounded-t-[20px]"
         />
       </div>
-      <div className="xl:p-6 p-4">
-        <h3 className="text-2xl font-semibold text-black mb-3">{title}</h3>
-        <p className="text-[#6B7280] text-sm mb-5">{description}</p>
+      <div className="p-4">
+        <h3 className="text-xl sm:text-2xl font-semibold text-black mb-3">{title}</h3>
+        <p className="text-[#6B7280] text-sm sm:text-base mb-5">{description}</p>
         <div className="mt-4">
           <ul className="space-y-2 mt-1 font-bold text-[14px]">
             <li className="flex items-center">

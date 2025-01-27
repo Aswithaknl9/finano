@@ -4,12 +4,17 @@ import { faCheck, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ServiceItems = ({ imgSrc, title, description, listItems, link, reverse }) => {
   return (
-    <div className={`flex bg-white p-6 rounded-3xl gap-6 shadow-lg ${reverse ? 'flex-row-reverse' : ''} w-[1100px] h-[500px]`}>
+    <div className={`flex flex-col sm:flex-row bg-white p-2 rounded-3xl gap-6 shadow-lg ${reverse ? 'sm:flex-row-reverse' : ''}`}>
+      {/* Image Section (on mobile it's on top, on larger screens it's beside the content) */}
+      <div className={`thumb flex-1 bg-[#F3F4F6] px-6 py-6 ${reverse ? 'rounded-r-3xl' : 'rounded-l-3xl'} sm:order-1`}>
+        <img alt="solution thumb" data-nimg="1" src={imgSrc} className={`w-full ${reverse ? 'rounded-l-3xl' : 'rounded-r-3xl'}`} />
+      </div>
+
       {/* Content Section */}
-      <div className="content flex-1 p-6">
+      <div className="content flex-1 p-6 sm:order-2">
         <div className="content_wrapper">
-          <h3 className="mb-4 text-[36px] font-bold">{title}</h3>
-          <p className="text-[14px] leading-5 text-[#6B7280] mb-4">{description}</p>
+          <h3 className="text-[24px] sm:text-[36px] font-bold mb-4">{title}</h3>
+          <p className="text-[14px] sm:text-[15px] leading-5 text-[#6B7280] mb-4">{description}</p>
           <ul className="mb-8 space-y-2">
             {listItems.map((item, index) => (
               <li key={index} className="flex items-center font-bold text-[#1F2937]">
@@ -27,11 +32,6 @@ const ServiceItems = ({ imgSrc, title, description, listItems, link, reverse }) 
             </span>
           </a>
         </div>
-      </div>
-
-      {/* Image Section */}
-      <div className={`thumb flex-1 bg-[#F3F4F6] px-6 py-6 ${reverse ? 'rounded-l-3xl' : 'rounded-r-3xl'}`}>
-        <img alt="solution thumb" data-nimg="1" src={imgSrc} className={`w-full ${reverse ? 'rounded-l-3xl' : 'rounded-r-3xl'}`} />
       </div>
     </div>
   );

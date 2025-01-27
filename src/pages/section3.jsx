@@ -9,8 +9,8 @@ const Section3 = () => {
   return (
     <div className="pb-40">
       <div className="flex flex-col items-center justify-center bg-gray-100 h-auto">
-        <div className="mt-40">
-          <h2 className="text-center text-[45px] font-semibold mb-8">
+        <div className="mt-20 sm:mt-32 lg:mt-40">
+          <h2 className="text-center text-xl sm:text-3xl lg:text-5xl font-semibold mb-8">
             Proud to Be an
             <span className="text-[#2974E7]"> Envato Elite Author.</span>
             <br />
@@ -23,8 +23,8 @@ const Section3 = () => {
             Explore More Products
             <FontAwesomeIcon icon={faArrowRight} className="ml-3" />
           </Link>
-          <div className="max-w-2xl mx-auto pt-10">
-            <h2 className="text-center text-[36px] font-semibold mb-8">
+          <div className="max-w-2xl mx-auto pt-20">
+            <h2 className="text-center text-[30px] sm:text-[35px] lg:text-[50px] font-semibold mb-8">
               Trusted by
               <span className="text-[#2974E7]"> 3500+ Clients </span>
               See What People Are Saying About Us
@@ -36,10 +36,10 @@ const Section3 = () => {
         {/* Updated Background Image Section */}
         <div 
           id="services" 
-          className="relative px-12 py-20 rounded-[30px] z-10 text-center mt-[60px] bg-cover bg-center bg-backgroundimg"
+          className="relative px-6 sm:px-10 lg:px-20 py-12 sm:py-16 lg:py-20 rounded-[30px] z-10 text-center mt-[60px] bg-cover bg-center bg-backgroundimg"
           style={{ marginBottom: '-300px' }} 
         >
-          <h1 className="text-white lg:w-[900px] h-[140px] font-semibold text-[65px] mx-11 mb-6 mx-auto">
+          <h1 className="text-white lg:w-[900px] sm:w-full h-[100px] font-semibold text-[45px] sm:text-[55px] lg:text-[65px] mx-6 sm:mx-8 lg:mx-auto mb-6">
             Turn Your FinTech App <br /> Idea Into Reality
           </h1>
 
@@ -70,9 +70,9 @@ const Section3 = () => {
           </div>
 
           {/* Contact Us Button */}
-          <div className="flex justify-center items-center pt-14">
+          <div className="flex justify-center items-center pt-28 sm:pt-28">
             <a className="primary__btn" href="/contact">
-              <span className="py-3 inline-block border-box text-white bg-[#2974E7] rounded-md px-3 font-semibold">
+              <span className="py-3 inline-block border-box text-white bg-[#2974E7] rounded-md px-6 sm:px-8 font-semibold">
                 Contact Us
               </span>
             </a>

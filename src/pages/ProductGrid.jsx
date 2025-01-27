@@ -40,9 +40,9 @@ const products = [
 
 const ProductGrid = () => {
   return (
-    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 mx-40">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mx-4 sm:mx-16 lg:mx-32">
       {products.map((product, index) => (
-        <div key={index} className="bg-white rounded-2xl">
+        <div key={index} className="bg-white rounded-2xl shadow-md hover:shadow-lg transition">
           <div className="w-full rounded-t-2xl overflow-hidden">
             <img
               alt="Product Thumb"
@@ -55,7 +55,7 @@ const ProductGrid = () => {
               style={{ color: 'transparent' }}
             />
           </div>
-          <div className="text-left p-3">
+          <div className="text-left p-4">
             <div className="mb-2">
               <span className="text-[10px] font-medium py-1 px-2 rounded-full bg-[#E4FFEF] text-[#107231]">
                 {product.label}

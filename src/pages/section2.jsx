@@ -36,33 +36,46 @@ const Section2 = () => {
   ];
 
   return (
-    <div className="px-8 py-16 bg-white text-center mx-40">
-      <div className="max-w-2xl mx-auto text-center mb-8">
-        <h2 className="mb-2 text-5xl font-semibold">
-          Dynamic <span className="text-purple-600 inline">Services</span> to Meet Your Unique Business Needs
+    <div className="px-4 py-16 bg-white text-center lg:px-20 xl:px-40">
+      {/* Heading Section */}
+      <div className="max-w-2xl mx-auto text-center mb-12">
+        <h2 className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-semibold">
+          Dynamic <span className="text-purple-600">Services</span> to Meet Your Unique Business Needs
         </h2>
-        <p className="text-gray-500">
-          Our dynamic services are specifically designed to address your unique business challenges. We focus on delivering innovative solutions that drive growth and improve operational efficiency.
+        <p className="text-gray-500 text-sm sm:text-base lg:text-lg">
+          Our dynamic services are specifically designed to address your unique business challenges. 
+          We focus on delivering innovative solutions that drive growth and improve operational efficiency.
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 gap-5">
+
+      {/* Services Grid */}
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {services.map((service, index) => (
           <div
             key={index}
-            className="service_item bg-white flex items-start p-4 rounded-lg shadow-md"
+            className="bg-white flex flex-col sm:flex-row items-start p-4 rounded-lg shadow-lg hover:shadow-xl transition"
           >
-            <div className="thumb flex-shrink-0">
+            {/* Image Section */}
+            <div className="flex-shrink-0 mb-4 sm:mb-0">
               <img
                 alt={service.imgAlt}
-                className="rounded bg-gray-100 w-[120px] p-5"
+                loading="lazy"
+                width="150"
+                height="120"
+                decoding="async"
+                data-nimg="1"
+                className="rounded bg-gray-100 w-full sm:w-28 p-5"
                 src={service.imgSrc}
+                style={{ color: 'transparent' }}
               />
             </div>
-            <div className="content ml-4 flex-grow text-left p-5">
-              <h3 className="title text-lg md:text-xl font-semibold">{service.title}</h3>
-              <p className="description text-gray-600">{service.description}</p>
+
+            {/* Content Section */}
+            <div className="sm:ml-6 flex-grow text-left">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-gray-600 text-sm sm:text-base">{service.description}</p>
               <a
-                className="btn text-blue-500 font-semibold mt-2 inline-flex items-center"
+                className="text-blue-500 font-semibold mt-3 inline-flex items-center"
                 href={service.link}
               >
                 Learn More
@@ -72,7 +85,7 @@ const Section2 = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-4 h-4 ml-1"
+                  className="w-4 h-4 ml-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -85,10 +98,12 @@ const Section2 = () => {
           </div>
         ))}
       </div>
+
+      {/* Show More Button */}
       <div className="text-center mt-10">
         <Link
           to="/services"
-          className="bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
+          className="bg-blue-600 text-white py-3 px-6 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-700 transition"
         >
           Show More Services
           <FontAwesomeIcon icon={faArrowRight} className="ml-3" />

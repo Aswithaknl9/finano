@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import solutionff from '../assets/solutionff.webp';
-import serviceImage from '../assets/service.webp';
-import companyImage from '../assets/company.webp';
-import helpImage from '../assets/help.webp';
+import solutionff from '../assets/solutionff.webp'; // Assuming this is the right image
 
 const Dropdown = ({ title, links }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -28,7 +25,7 @@ const Dropdown = ({ title, links }) => {
     if (title.toLowerCase() === 'help') {
       return helpImage;
     }
-    return solutionff;
+    return solutionff; // Default image for other titles
   };
 
   return (
@@ -51,44 +48,37 @@ const Dropdown = ({ title, links }) => {
 
       {/* Dropdown Content */}
       {isDropdownOpen && (
-        <div
-          className="absolute top-full mt-2 w-[1000px] bg-white border rounded-lg shadow-lg z-10"
-        >
-          <div className="flex">
-            {/* List Items */}
-            <ul className="grid grid-cols-3 gap-4 p-4 w-2/3">
+        <div className="bg-white absolute w-[1000px] top-10 left-1/2 transform -translate-x-[40%]">
+          {/* Flex Container for the Dropdown Content */}
+          <div className="flex p-4">
+            {/* Left-side content: Grid List */}
+            <ul className="grid grid-cols-3 gap-4 p-3   flex-1">
               {links.map((link, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-x-4 p-2 hover:bg-gray-100 rounded-lg"
-                >
-                  <NavLink to={link.path} className="flex items-start text-left w-full">
-                    {/* Image */}
-                    <div className="flex w-24 h-24 justify-center items-center ">
+                <li key={index} className="hover:border hover:rounded-md hover:shadow-md">
+                  <NavLink
+                    to={link.path}
+                    className="block text-sm text-gray-800"
+                  >
+                    <div className="flex items-center gap-4">
+                      {/* Image on the left */}
                       <img
-                        alt={link.label}
-                        className="object-contain w-full h-full"
                         src={link.imgSrc}
+                        alt={link.label}
+                        className="w-8 h-8 rounded-lg p-2"
+                        style={{ backgroundColor: link.bgColor }}
                       />
-                    </div>
-                    {/* Text */}
-                    <div className="flex flex-col ml-4">
-                      <h4 className="text-sm font-bold">{link.label}</h4>
-                      <p className="text-xs text-gray-500 mt-1">{link.description}</p>
+                      {/* Content on the left: Hide description and title on mobile */}
+                      <div className="flex-col items-start hidden sm:block ">
+                        <p className="font-semibold text-left">{link.label}</p>
+                        <p className="text-xs text-[#6b7280]  text-left">
+                          {link.description}
+                        </p>
+                      </div>
                     </div>
                   </NavLink>
                 </li>
               ))}
             </ul>
-
-            {/* Right Image Section */}
-            <div className="w-1/3">
-              <img
-                src={getRightImage()}
-                alt="Right Section"
-                className="object-cover w-full h-full rounded-lg"
-              />
-            </div>
           </div>
         </div>
       )}

@@ -58,12 +58,11 @@ const reviews = [
     location: 'Uganda, Member since April 2024',
     imageUrl: 'https://appdevs.net/_next/static/media/user-1.d9b08a77.png',
   },
-  
 ];
 
 const ReviewSection = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2  mx-48 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 sm:mx-12 lg:mx-48">
       {reviews.map((review, index) => (
         <div
           key={index}
@@ -84,7 +83,6 @@ const ReviewSection = () => {
             <StarRating />
           </div>
 
-    
           <p className="font-medium text-justify leading-[25px] text-[#1F2937] mb-8 flex-grow">
             {review.message}
           </p>
@@ -102,8 +100,8 @@ const ReviewSection = () => {
               />
             </div>
             <div className="ms-4 text-start">
-              <span className="block font-semibold  text-blue-500">{review.name}</span>
-              <span className="text-[#6b7280]  opacity-80">{review.location}</span>
+              <span className="block font-semibold text-blue-500">{review.name}</span>
+              <span className="text-[#6b7280] opacity-80">{review.location}</span>
             </div>
           </div>
         </div>
@@ -117,7 +115,6 @@ const ReviewSection = () => {
           Show Less
         </button>
       </div>
-
     </div>
   );
 };

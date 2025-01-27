@@ -98,7 +98,7 @@ export const dropdown = {
       description: 'Smooth installation and deployment for seamless FinTech system integration.',
     },
     {
-      path: '/services/service-2',
+      path: '/services/fintech-software-development',
       label: 'Custom FinTech Development',
       imgSrc: 'https://appdevs.net/_next/static/media/fintech.29adde90.webp',
       description: 'Tailored FinTech software to streamline financial operations and innovation.',

@@ -1,4 +1,8 @@
 import React from 'react';
+import Installation1 from '../ServicesPages/Installation1';
+import Installation2 from '../ServicesPages/installation2';
+import Installation3 from '../ServicesPages/installation3';
+
 
 const Installation = () => {
   return (
@@ -33,7 +37,9 @@ const Installation = () => {
                 <input type="search" id="default-search" class="block w-full p-3 ps-10 text-sm text-black border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 placeholder:text-black dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Installation..." required />
             </div>
         </form>
-        
+        <Installation1 />
+        <Installation2 />
+        <Installation3 />
     </section>
   );
 };

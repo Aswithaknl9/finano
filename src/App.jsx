@@ -20,6 +20,7 @@ import AIchatbot from './Solutiondroplist/AIchatbot';
 import OnlineBooking from './Solutiondroplist/OnlineBooking';
 import MultiVendor from './Solutiondroplist/MultiVendor';
 import Installation from './Servicesdropdownlist/Installation';
+import Fintech from './Servicesdropdownlist/Fintech';
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path='/solutions/online-booking-solutions' element={<OnlineBooking />} />
         <Route path='/solutions/multi-vendor-solutions' element={<MultiVendor />} />
         <Route path='/services/installation-service' element={<Installation />} />
+        <Route path='/services/fintech-software-development' element={<Fintech />} />
       </Routes>
       <Footer />
     </Router>

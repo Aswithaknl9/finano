@@ -18,10 +18,10 @@ const Services = () => {
           <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[12px] px-3 py-1 font-semibold mb-6">
             Our Services
           </span>
-          <h1 className="text-4xl font-bold mt-3 md:mb-6">
+          <h1 className="text-3xl sm:text-4xl font-bold mt-3 md:mb-6">
             Customized Services To Kick-Start Your Business
           </h1>
-          <p className="text-gray-700 text-[15px] mb-6">
+          <p className="text-gray-700 text-[14px] sm:text-[15px] mb-6">
             Our dynamic services are specifically designed to address your unique business challenges. We focus on delivering innovative solutions that drive growth and improve operational efficiency.
           </p>
         </div>
