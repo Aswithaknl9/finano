@@ -21,6 +21,17 @@ import OnlineBooking from './Solutiondroplist/OnlineBooking';
 import MultiVendor from './Solutiondroplist/MultiVendor';
 import Installation from './Servicesdropdownlist/Installation';
 import Fintech from './Servicesdropdownlist/Fintech';
+import MobileDevelopment from './Servicesdropdownlist/MobileDevelopment';
+import WebDevelopment from './Servicesdropdownlist/WebDevelopment';
+import Uidesign from './Servicesdropdownlist/Uidesign';
+import Quality from './Servicesdropdownlist/Quality';
+import Cloud from './Servicesdropdownlist/Cloud';
+import Devops from './Servicesdropdownlist/Devops';
+import Maintenance from './Servicesdropdownlist/Maintenance';
+import Aboutus from './Companydropdownlist/Aboutus';
+import Mission from './Companydropdownlist/Mission';
+import Vision from './Companydropdownlist/Vision';
+import Team from './Companydropdownlist/Team';
 
 const App = () => {
   return (
@@ -46,6 +57,17 @@ const App = () => {
         <Route path='/solutions/multi-vendor-solutions' element={<MultiVendor />} />
         <Route path='/services/installation-service' element={<Installation />} />
         <Route path='/services/fintech-software-development' element={<Fintech />} />
+        <Route path='/services/mobile-application-development' element={<MobileDevelopment />} />
+        <Route path='/services/web-development' element={<WebDevelopment />} />
+        <Route path='/services/ui-ux-design' element={<Uidesign />} />
+        <Route path='/services/quality-assurance-testing' element={<Quality />}/>
+        <Route path='/services/cloud-services' element={<Cloud />} />
+        <Route path='/services/devops-services' element={<Devops />} />
+        <Route path='/services/maintenance-and-support' element={<Maintenance />} />
+        <Route path='/about-us' element={<Aboutus />} />
+        <Route path='/our-mission' element={<Mission />} />
+        <Route path='/our-vision' element={<Vision />} />
+        <Route path='/join-our-team' element={<Team />} />
       </Routes>
       <Footer />
     </Router>

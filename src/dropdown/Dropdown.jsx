@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import solutionff from '../assets/solutionff.webp'; // Assuming this is the right image
+import solutionff from '../assets/solutionff.webp'; 
 
 const Dropdown = ({ title, links }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -43,7 +43,7 @@ const Dropdown = ({ title, links }) => {
       </NavLink>
       <FontAwesomeIcon
         icon={faChevronDown}
-        className={`ml-2 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'} text-sm`}
+        className={`ml-2 transition-transform duration-100 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'} text-sm`}
       />
 
       {/* Dropdown Content */}

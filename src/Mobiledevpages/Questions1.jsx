@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const Questions = () => {
+const Questions1 = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -10,35 +10,31 @@ const Questions = () => {
 
   const faqs = [
     {
-      question: "What is Custom Fintech Development?",
+      question: "What platforms do you develop apps for?",
       answer:
-        "Custom Fintech Development is a digital platform or application provided by banks or financial institutions that allows users to access banking services and manage their finances using their mobile devices, such as smartphones or tablets.",
+        "We develop apps for iOS, Android, and cross-platform environments using the latest technologies.",
     },
     {
-      question: "What services can I access through Custom Fintech Development?",
+      question: "How long does it take to develop a mobile app?",
       answer:
-        "Fintech Development typically offer a wide range of services, including checking account balances, transferring funds between accounts, paying bills, depositing checks, setting up alerts, and managing account settings.",
+        "Development timelines vary based on the app’s complexity, but we ensure on-time delivery.",
     },
     {
-      question: "Is it safe to use Custom Fintech Development?",
+      question: "Do you provide post-launch support?",
       answer:
-        "Yes, Fintech Development employ advanced security measures such as encryption, multi-factor authentication, and real-time fraud monitoring to protect users' financial information and transactions. It's important to follow recommended security practices such as using strong passwords and keeping your device's operating system and app up to date.",
+        "Yes, we offer ongoing maintenance, updates, and support after your app is launched.",
     },
     {
-      question: "Can I access Fintech Development from any mobile device?",
+      question: "Can I see progress during app development?",
       answer:
-        "In most cases, Fintech Development are accessible from a wide range of mobile devices, including smartphones and tablets, as long as they have internet connectivity and meet the minimum system requirements specified by the bank or financial institution.",
+        "Absolutely! We provide regular updates and demos to keep you involved throughout the process.",
     },
     {
-      question: "How do I get started with Fintech?",
+      question: "What industries do you serve?",
       answer:
-        "To get started with Fintech, you typically need to download the Fintech app from your bank or financial institution's website or app store. Once downloaded, you'll need to register for the service and set up your account using the provided instructions.",
+        "We work across industries including FinTech, healthcare, e-commerce, education, and more.",
     },
-    {
-      question: "Are there any fees associated with using Fintech?",
-      answer:
-        "Many banks offer Fintech Development as a free service to their customers. However, there may be fees associated with specific transactions or services, such as expedited transfers or international wire transfers. It's best to check with your bank for information on any applicable fees.",
-    },
+   
   ];
 
   return (
@@ -47,8 +43,8 @@ const Questions = () => {
         <div className="section_header mb-7 lg:mb-12">
           <div className="max-w-[775px] mx-auto text-center">
             <h2 className="mb-0 font-semibold text-5xl">
-            Here Are Some (FAQ) About 
-              <span className="text-[#2974e7] inline">   Custom Fintech Development</span>
+            Frequently Asked Questions About
+              <span className="text-[#2974e7] inline">Mobile Application Development</span>
             </h2>
           </div>
         </div>
@@ -110,4 +106,4 @@ const Questions = () => {
   );
 };
 
-export default Questions;
+export default Questions1;
