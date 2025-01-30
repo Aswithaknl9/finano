@@ -17,7 +17,7 @@ const reviews = [
   {
     message: 'They helped me to support to install with some technical questions. Many thanks to Support. I recommend using Support.',
     name: 'johanvalera',
-    location: 'Venezuela, Bolivarian Republic of, Member since October 2022',
+    location: 'Venezuela, Member since October 2022',
     imageUrl: 'https://appdevs.net/_next/static/media/user-1.d9b08a77.png',
   },
   {
@@ -49,13 +49,15 @@ const ReviewSection = () => {
 
   return (
     <div className="mx-4 sm:mx-12 lg:mx-48">
+      {/* Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {reviews.slice(0, visibleReviews).map((review, index) => (
           <div
             key={index}
-            className="testimonial_item bg-white sm:py-9 py-4 sm:px-7 px-4 sm:rounded-[40px] rounded-3xl mb-4 flex flex-col justify-between h-full"
+            className="testimonial_item bg-white p-6 sm:p-9 rounded-3xl shadow-md flex flex-col h-full min-h-[250px]"
           >
-            <div className="flex items-start justify-between mb-6">
+            {/* Top Section */}
+            <div className="flex items-start justify-between mb-4">
               <svg
                 width="32"
                 height="24"
@@ -70,30 +72,32 @@ const ReviewSection = () => {
               <StarRating />
             </div>
 
-            <p className="font-medium text-justify leading-[25px] text-[#1F2937] mb-8 flex-grow">
+            {/* Review Message */}
+            <p className="font-medium leading-[25px] text-gray-800 mb-4 flex-grow">
               {review.message}
             </p>
 
-            <div className="flex items-center">
-              <div className="rounded-full overflow-hidden">
-                <img
-                  alt="User"
-                  loading="lazy"
-                  width="43"
-                  height="43"
-                  decoding="async"
-                  className="object-cover"
-                  src={review.imageUrl}
-                />
-              </div>
-              <div className="ms-4 text-start">
+            {/* User Info */}
+            <div className="flex items-center mt-auto">
+              <img
+                alt="User"
+                loading="lazy"
+                width="43"
+                height="43"
+                decoding="async"
+                className="rounded-full w-12 h-12 object-cover"
+                src={review.imageUrl}
+              />
+              <div className="ml-4">
                 <span className="block font-semibold text-blue-500">{review.name}</span>
-                <span className="text-[#6b7280] opacity-80">{review.location}</span>
+                <span className="text-gray-500 text-sm">{review.location}</span>
               </div>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Show More/Less Button */}
       <div className="text-center mt-6">
         {visibleReviews < reviews.length ? (
           <button

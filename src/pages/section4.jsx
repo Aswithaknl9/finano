@@ -9,10 +9,10 @@ const Section4 = () => {
       <div className="flex flex-col lg:flex-row gap-6 items-center">
         {/* Text Section */}
         <div className="lg:w-1/2 gap-6 text-center lg:text-left">
-          <h1 className="text-[32px] sm:text-[40px] lg:text-[45px] font-bold mb-4">
+          <h1 className="text-[24px]  sm:text-[28px] md:text-[30px] lg:text-[38px]  xl:text-[48px] font-bold mb-4">
             Skilled <span className="text-[#2974E7]">Mobile App Developers</span> with a Passion for <span className="text-[#7c3aed]"> FinTech </span> Innovation
           </h1>
-          <p className="text-[#6B7280] text-[14px] sm:text-[16px] lg:text-[15px] mb-8">
+          <p className="text-[#6B7280] text-[14px] sm:text-[16px] lg:text-[16px] mb-8">
             Our team of skilled mobile app developers is dedicated to creating innovative FinTech solutions tailored to your needs. With expertise in secure, user-friendly financial applications, we help bring your vision to life.
           </p>
           <div className="text-left mt-6 sm:mt-8">
@@ -36,7 +36,7 @@ const Section4 = () => {
           <img alt="About Image" className="mt-[80px] xl:w-[50%] lg:w-[250px] lg:block hidden mb-6" src="https://appdevs.net/_next/static/media/aboutSection.846d64c5.png" style={{ color: 'transparent' }} />
 
           {/* Mobile and Tablet Image (responsive to screen sizes) */}
-          <img alt="About Image" className="lg:mb-[80px] xl:w-[50%] lg:w-[250px] sm:w-full w-auto h-auto" src="https://appdevs.net/_next/static/media/aboutSection2.95dac0c4.png" style={{ color: 'transparent' }} />
+          <img alt="About Image" className="lg:mb-[80px] xl:w-[50%] lg:w-[250px]  sm:w-full w-auto h-auto" src="https://appdevs.net/_next/static/media/aboutSection2.95dac0c4.png" style={{ color: 'transparent' }} />
         </div>
       </div>
     </div>

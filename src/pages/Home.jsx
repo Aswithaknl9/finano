@@ -15,30 +15,30 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <div
-        className="flex items-center justify-center min-h-screen relative flex-col pt-[10vh] bg-cover bg-center"
+        className="flex items-center justify-center min-h-screen relative flex-col pt-[10vh] bg-cover bg-center "
         style={{
           backgroundImage: "url('https://appdevs.net/_next/static/media/bannerBg.787073cc.webp')",
         }}
       >
-        <div className="text-center max-w-[90%] sm:max-w-2xl p-4 sm:p-8 relative z-10 bg-opacity-75 rounded-lg">
-          {/* Subheading */}
-          <span className="text-sm sm:text-base text-[#0E7490] shadow-sm  bg-[#0E74901A] font-medium mb-2 rounded-xl px-4 py-3 inline-block">
+        <div className="text-center  sm:px-[16px]  sm:max-w-2xl  sm:px-4 mx-auto relative z-10 bg-opacity-75 rounded-lg">
+         
+          <span className="text-[11px] sm:text-base text-[#0E7490] shadow-sm  bg-[#0E74901A] font-medium mb-2 rounded-xl px-6 py-2 inline-block">
             Looking to Build FinTech Applications?
           </span>
 
-          {/* Heading */}
-          <h1 className="text-4xl sm:text-[55px] font-semibold mb-4 leading-tight">
+         
+          <h1 className="text-[30px] sm:text-[50px]  lg:text-[60px] font-semibold mb-3 leading-tight">
             We Develop Next-Gen <span className="text-[#7c3aed]">FinTech Applications</span> for Business Growth
           </h1>
 
-          {/* Description */}
+          
           <p className="text-gray-700 text-sm sm:text-lg mb-6">
             AppDevs is a leading FinTech software development company specializing in building cutting-edge financial applications designed to drive business growth.
           </p>
 
           {/* Call to Action Button */}
           <a
-            className="inline-flex items-center justify-center bg-[#2974E7] text-white px-4 py-2 sm:px-6 sm:py-3 font-bold transition-all hover:bg-[#1d4ed8] rounded-lg text-sm sm:text-base"
+            className="inline-flex items-center justify-center bg-[#2974E7] text-white px-4 py-3 lg:py-3 sm:px-6 sm:py-2 font-bold transition-all hover:bg-[#1d4ed8] rounded-md text-sm sm:text-base"
             href="/consultation"
           >
             <span>Get Free Consultation</span>
@@ -49,7 +49,7 @@ const Home = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-5 sm:w-6 h-5 sm:h-6"
+                className="w-5 sm:w-6 h-5 sm:h-5"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
@@ -57,8 +57,8 @@ const Home = () => {
           </a>
 
           {/* Ratings Section */}
-          <div className="mt-5 flex justify-center items-center space-x-2">
-            <div className="w-8 h-8 rounded-full flex justify-center items-center">
+          <div className="mt-5 flex justify-center items-center space-x-1 text-[12px] ">
+            <div className="w-8 h-8 rounded-full flex justify-center  bg-white items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

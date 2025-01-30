@@ -226,4 +226,4 @@ export const dropdown = {
 
 
   ]
-};
+}

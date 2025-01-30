@@ -19,12 +19,12 @@ const Section3 = () => {
         </div>
         <ProductGrid />
         <div className="text-center mt-16">
-          <Link to="/products" className="bg-[#2974E7] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#255ec3] transition">
+          <Link to="/products" className="bg-[#2974E7] text-white py-2 px-5 lg:px-5 lg:py-3  rounded-lg text-lg font-semibold hover:bg-[#255ec3] transition">
             Explore More Products
             <FontAwesomeIcon icon={faArrowRight} className="ml-3" />
           </Link>
           <div className="max-w-2xl mx-auto pt-20">
-            <h2 className="text-center text-[30px] sm:text-[35px] lg:text-[50px] font-semibold mb-8">
+            <h2 className="text-center text-[24px]  sm:text-[28px] md:text-[30px] lg:text-[38px]  xl:text-[48px] font-semibold mb-8">
               Trusted by
               <span className="text-[#2974E7]"> 3500+ Clients </span>
               See What People Are Saying About Us

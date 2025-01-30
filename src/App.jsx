@@ -32,6 +32,12 @@ import Aboutus from './Companydropdownlist/Aboutus';
 import Mission from './Companydropdownlist/Mission';
 import Vision from './Companydropdownlist/Vision';
 import Team from './Companydropdownlist/Team';
+import Lifeappdevs from './Companydropdownlist/Lifeappdevs';
+import FAQSection from './Companydropdownlist/FAQSection';
+import Documentation from './Helpdropdownlist/Documentation';
+import Sales from './Helpdropdownlist/Sales';
+import Techincal from './Helpdropdownlist/Techincal';
+import Customization from './Helpdropdownlist/Customization';
 
 const App = () => {
   return (
@@ -68,6 +74,13 @@ const App = () => {
         <Route path='/our-mission' element={<Mission />} />
         <Route path='/our-vision' element={<Vision />} />
         <Route path='/join-our-team' element={<Team />} />
+        <Route path='/life-at-appdevs' element={<Lifeappdevs />} />
+        <Route path='/faq' element={<FAQSection />} />
+        <Route path='/documentation' element={<Documentation />} />
+        <Route path='/sales-support' element={<Sales />} />
+        <Route path='/technical-support' element={<Techincal />} />
+        <Route path='/customization' element={<Customization />} />
+
       </Routes>
       <Footer />
     </Router>

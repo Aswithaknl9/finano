@@ -4,10 +4,10 @@ import { technologies } from '../Js/technologies';
 
 const Section6 = () => {
   return (
-    <section className="relative flex flex-col items-center max-w-[1200px] mx-auto mt-14 px-4">
+    <section className="relative flex flex-col items-center max-w-[1200px] mx-auto mt-14 py-[8px] ">
       {/* Title */}
-      <div className="text-center mb-8">
-        <h1 className="text-[32px] sm:text-[28px] font-semibold">
+      <div className="text-center mb-14">
+        <h1 className="text-[32px] sm:text-[40px] font-semibold ">
           Technologies used to develop our products.
         </h1>
       </div>
@@ -22,7 +22,7 @@ const Section6 = () => {
         />
 
         {/* Technologies Grid */}
-        <div className="relative z-10 flex flex-col items-center gap-4">
+        <div className="relative z-10 flex flex-col items-center  gap-4 text-[14px] lg:text-[18px] ">
           {/* First Line (6 items) */}
           <div className="flex flex-wrap justify-center gap-3">
             {technologies.slice(0, 6).map((tech, index) => (

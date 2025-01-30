@@ -1,7 +1,4 @@
 import React from 'react';
-import MissionPillars from '../MissionPages/MissionPillars';
-import ExpertiseSection from '../MissionPages/ExpertiseSection';
-import Sectionnn from '../MissionPages/Sectionnn';
 import MissionPillars1 from '../MissionPillarsPages/MissionPillars1';
 import ExpertiseSection1 from '../MissionPillarsPages/ExpertiseSection1';
 import Sectionnnn from '../MissionPillarsPages/Sectionnnnn';
