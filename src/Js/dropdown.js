@@ -188,25 +188,25 @@ export const dropdown = {
   ],
   help: [
     {
-      path: '/help/faq',
+      path: '/documentation',
       label: 'Documentation',
       imgSrc: 'https://appdevs.net/_next/static/media/documentation.ebb8fcb6.webp',
       description: 'Access comprehensive guides and resources for seamless product usage.',
     },
     {
-      path: '/help/support',
+      path: '/sales-support',
       label: 'Sales Support',
       imgSrc: 'https://appdevs.net/_next/static/media/sales.c887570a.webp',
       description: 'Connect with sales for purchase inquiries and product details.',
     },
     {
-      path: '/help/support',
+      path: '/technical-support',
       label: 'Technical Support',
       imgSrc: 'https://appdevs.net/_next/static/media/support.a6cb96db.webp',
       description: 'Get help with technical issues and troubleshooting guidance.',
     },
     {
-      path: '/help/support',
+      path: '/customization',
       label: 'Get Customization',
       imgSrc: 'https://appdevs.net/_next/static/media/customization.3b95b58e.webp',
       description: 'Request tailored solutions to fit your unique business needs.',
