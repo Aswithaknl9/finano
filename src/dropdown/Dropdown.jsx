@@ -1,73 +1,74 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const Dropdown = ({ title, links }) => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
-
-  const handleDropdownToggle = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
+  const isSolutions = title.toLowerCase() === "solutions"; // Check if it's "Solutions"
+  const isServices = title.toLowerCase() === "services"; // Check if it's "Services"
+  const isCompany = title.toLowerCase() === "company"; // Check if it's "Company"
+  const isHelp = title.toLowerCase() === "help"; // Check if it's "Help"
 
   return (
-    <li ref={dropdownRef} className="relative flex items-center group">
-      <NavLink
-        to={`/${title.toLowerCase()}`}
-        className={({ isActive }) => (isActive ? "text-blue-700" : "text-black")}
-      >
+    <li
+      className="relative group lg:py-8 lg:px-0  py-2"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <a className="flex items-center text-black" href={`/${title.toLowerCase()}`}>
         {title}
-      </NavLink>
-      <FontAwesomeIcon
-        icon={faChevronDown}
-        className={`ml-2 transition-transform duration-300 ${
-          isDropdownOpen ? "rotate-180" : "rotate-0"
-        } text-sm`}
-        onClick={handleDropdownToggle}
-      />
-
-      {isDropdownOpen && (
-        <div>
-        <div
-          className="absolute left-0 lg:left-1/2 lg:-translate-x-1/2 top-10 bg-white shadow-lg lg:rounded-lg border z-[50] lg:w-[1100%] w-[500px] rounded-[30px] h-auto p-4"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-4 text-color__heading ml-1 relative top-[1px] transition-transform duration-300 group-hover:rotate-180"
         >
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {links.map((link, index) => (
-              <li key={index} className="hover:bg-gray-100 p-2 rounded-md transition-all">
-                <NavLink to={link.path} className="block text-sm text-gray-800">
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={link.imgSrc}
-                      alt={link.label}
-                      className="w-8 h-8 rounded-md"
-                      style={{ backgroundColor: link.bgColor }}
-                    />
-                    <div>
-                      <p className="font-semibold">{link.label}</p>
-                      <p className="text-xs text-gray-500 hidden lg:block">
-                        {link.description}
-                      </p>
+          <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+      </a>
+
+      {/* Dropdown Menu */}
+      {isOpen && (
+        <div 
+          className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg z-50 w-[380px] sm:w-[500px] md:w-[650px] lg:w-[800px] xl:w-[900px] p-6 flex space-x-4"
+        >
+          {/* Left Side: Grid Layout */}
+          <div className="w-2/3 pr-4">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {links.map((item, index) => (
+                <li key={index} className="hover:bg-gray-100 p-3 rounded-md transition-all">
+                  <NavLink className="flex items-start space-x-4" to={item.path}>
+                    {/* Icon with Background */}
+                    <div className="w-16 h-16 flex justify-center items-center overflow-hidden">
+                      <img
+                        alt={item.label}
+                        loading="lazy"
+                        width="60"
+                        height="60"
+                        className="w-full h-full object-cover"
+                        src={item.imgSrc}
+                      />
                     </div>
-                  </div>
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
+                    {/* Text Content */}
+                    <div>
+                      <h4 className="font-semibold text-black">{item.label}</h4>
+                      <p className="text-xs text-gray-500">{item.description}</p>
+                    </div>
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right Side: Background Image */}
+          {(isSolutions || isServices || isCompany || isHelp) && (
+            <div
+              className={`w-1/3 bg-cover bg-no-repeat rounded-r-lg ${isSolutions ? "bg-[url('https://appdevs.net/_next/static/media/solution.f7885da2.webp')]" : 
+                isServices ? "bg-[url('https://appdevs.net/_next/static/media/service.f736508e.webp')]" : 
+                isCompany ? "bg-[url('https://appdevs.net/_next/static/media/company.c78efb6d.webp')]" :
+                isHelp ? "bg-[url('https://appdevs.net/_next/static/media/help.872b39ec.webp')]" : ""} bg-center`}
+            />
+          )}
         </div>
       )}
     </li>

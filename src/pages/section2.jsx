@@ -7,24 +7,32 @@ const services = [
     description: "Tailored FinTech software to streamline financial operations and innovation.",
     imgSrc: "https://appdevs.net/_next/static/media/customization.f7d38ed8.webp",
     link: "/services/fintech-software-development",
+    width: "w-[150px]",
+    height: "h-[120px]",
   },
   {
     title: "Mobile App Development",
     description: "Advanced mobile solutions crafted for the finance industry.",
     imgSrc: "https://appdevs.net/_next/static/media/onDemand.b7bc7309.webp",
     link: "/services/mobile-application-development",
+    width: "w-[150px]",
+    height: "h-[130px]",
   },
   {
     title: "Web Development",
     description: "Robust web solutions tailored for FinTech businesses.",
     imgSrc: "https://appdevs.net/_next/static/media/qualityAssurance.fec3c921.webp",
     link: "/services/web-development",
+    width: "w-[150px]",
+    height: "h-[121px]",
   },
   {
     title: "UI/UX Design",
     description: "User-focused design for engaging, efficient FinTech applications.",
     imgSrc: "https://appdevs.net/_next/static/media/customization.f7d38ed8.webp",
     link: "/services/ui-ux-design",
+    width: "w-[150px]",
+    height: "h-[120px]",
   },
 ];
 
@@ -43,33 +51,33 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid sm:grid-cols-2 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-5">
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white shadow-md rounded-[30px] overflow-hidden p-1 flex lg:flex-row flex-col items-center text-center lg:text-left"
             >
-              {/* Image on Top for Small/Tablet Screens & Left for Large Screens */}
-              <div className="w-full lg:w-auto flex justify-start bg-gray-100 rounded-l-[30px]  p-6">
-                <img 
-                  alt={service.title} 
-                  loading="lazy" 
-                  width="200" 
-                  height="200" 
-                  className="w-40 h-auto"
-                  src={service.imgSrc} 
+              
+              <div className="w-full lg:w-auto flex justify-center bg-gray-100 rounded-l-[30px] p-6">
+                <img
+                  alt={service.title}
+                  loading="lazy"
+                  decoding="async"
+                  className={`${service.width} ${service.height} object-contain`}
+                  style={{ color: "transparent" }}
+                  src={service.imgSrc}
                 />
               </div>
-              
+
               {/* Text Content */}
               <div className="p-5 flex flex-col items-start justify-start lg:items-start">
                 <h3 className="text-xl mb-4 font-semibold">{service.title}</h3>
                 <div className="text-start">
-                <p className="text-gray-600 text-[14px]">{service.description}</p>
+                  <p className="text-gray-600 text-[14px]">{service.description}</p>
                 </div>
-                <Link 
-                  to={service.link} 
-                  className="text-blue-500 hover:text-purple-500 font-semibold text-[15px] flex items-start mt-6"
+                <Link
+                  to={service.link}
+                  className="text-blue-500 hover:text-purple-500 font-semibold text-[15px] flex items-center mt-6"
                 >
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 ml-2">
@@ -81,12 +89,25 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        {/* Show More Button */}
-        <div className="text-center mt-10">
-          <Link to="/services" className="bg-blue-500 text-white px-5 py-2 lg:px-5 lg:py-3 lg:text-[18px] rounded-lg text-sm md:text-base font-semibold hover:bg-blue-700 transition">
-            Show More Services
-          </Link>
-        </div>
+        <div className="text-center pt-10">
+  <a className="flex items-center justify-center" href="/services">
+    <span className="flex items-center gap-3 text-white bg-blue-600 py-3 px-5 rounded-md">
+      Show More Services
+      <span className="border-l border-white h-5 pl-3 ml-2 flex items-center">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          strokeWidth="1.5" 
+          stroke="currentColor" 
+          className="w-5 h-5 text-white"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+        </svg>
+      </span>
+    </span>
+  </a>
+</div>
       </div>
     </section>
   );

@@ -39,43 +39,46 @@ const Section3 = () => {
           className="relative px-6 sm:px-10 lg:px-20 py-12 sm:py-16 lg:py-20 rounded-[30px] z-10 text-center mt-[60px] bg-cover bg-center bg-backgroundimg"
           style={{ marginBottom: '-300px' }} 
         >
-          <h1 className="text-white lg:w-[900px] sm:w-full h-[100px] font-semibold text-[45px] sm:text-[55px] lg:text-[65px] mx-6 sm:mx-8 lg:mx-auto mb-6">
-            Turn Your FinTech App <br /> Idea Into Reality
-          </h1>
 
           {/* Second Background Image (Top-Left Corner) */}
-          <div className="absolute top-0 left-0 z-[-1]">
-            <img
-              alt="call-to-action"
-              loading="lazy"
-              width="1248"
-              height="398"
-              decoding="async"
-              className="object-cover"
+          <div className="absolute inset-0 z-[-1]">
+            <img 
+              alt="call-to-action" 
+              loading="lazy" 
+              width="1248" 
+              height="398" 
+              decoding="async" 
+              className="absolute top-0 left-0 object-cover w-full h-full opacity-70" 
+              style={{ color: "transparent" }} 
               src="https://appdevs.net/_next/static/media/call-to-action-bg.c8db122f.webp"
             />
           </div>
 
-          {/* Third Background Image (Top-Right Corner) */}
           <div className="absolute top-0 right-0 z-[-1]">
-            <img
-              alt="call-to-action-element"
-              loading="lazy"
-              width="417"
-              height="415"
-              decoding="async"
-              className="object-cover"
+            <img 
+              alt="call-to-action" 
+              loading="lazy" 
+              width="417" 
+              height="415" 
+              decoding="async" 
+              className="object-cover opacity-70" 
+              style={{ color: "transparent" }} 
               src="https://appdevs.net/_next/static/media/call-to-action-element.251891da.webp"
             />
           </div>
 
-          {/* Contact Us Button */}
-          <div className="flex justify-center items-center pt-28 sm:pt-28">
-            <a className="primary__btn" href="/contact">
-              <span className="py-3 inline-block border-box text-white bg-[#2974E7] rounded-md px-6 sm:px-8 font-semibold">
+          <div>
+            <h2 className="xl:text-5xl md:text-4xl sm:leading-[85px] text-white lg:w-[70%] mx-auto mb-6 font-semibold">
+              Turn Your FinTech App Idea Into Reality
+            </h2>
+            <div className="flex justify-center items-center">
+              <a 
+                className="bg-blue-600 hover:bg-blue-700 transition text-white py-3 px-6 rounded-lg font-medium shadow-md"
+                href="/contact"
+              >
                 Contact Us
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -9,6 +9,10 @@ import Section3 from './section3';
 import Section4 from './section4';
 import Section5 from './section5';
 import Section6 from './section6';
+import Ection3 from './Ection3';
+import { products } from '../Js/PPP';
+
+
 
 const Home = () => {
   return (
@@ -20,19 +24,19 @@ const Home = () => {
           backgroundImage: "url('https://appdevs.net/_next/static/media/bannerBg.787073cc.webp')",
         }}
       >
-        <div className="text-center  sm:px-[16px]  sm:max-w-2xl  sm:px-4 mx-auto relative z-10 bg-opacity-75 rounded-lg">
+        <div className="text-center  sm:px-[16px]  sm:max-w-2xl  mx-auto relative z-10 bg-opacity-75 rounded-lg">
          
           <span className="text-[11px] sm:text-base text-[#0E7490] shadow-sm  bg-[#0E74901A] font-medium mb-2 rounded-xl px-6 py-2 inline-block">
             Looking to Build FinTech Applications?
           </span>
 
          
-          <h1 className="text-[30px] sm:text-[50px]  lg:text-[60px] font-semibold mb-3 leading-tight">
+          <h1 className="text-[30px] sm:text-[50px]  lg:text-[55px] font-semibold leading-tight mb-5">
             We Develop Next-Gen <span className="text-[#7c3aed]">FinTech Applications</span> for Business Growth
           </h1>
 
           
-          <p className="text-gray-700 text-sm sm:text-lg mb-6">
+          <p className="text-gray-700 text-sm sm:text-lg mb-6 tracking-normal">
             AppDevs is a leading FinTech software development company specializing in building cutting-edge financial applications designed to drive business growth.
           </p>
 
@@ -85,7 +89,13 @@ const Home = () => {
       <LogoImg />
       <Section1 />
       <Section2 />
-      <Section3 />
+      <div>
+      <Ection3
+        title="Proud to Be an"
+        subtitle="Products"
+        products={products} // Pass the products array here
+      />
+    </div>
       <Section4 />
       <Section5 />
       <Section6 />

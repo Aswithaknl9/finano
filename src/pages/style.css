@@ -1,0 +1,17 @@
+.marquee {
+    animation: slide 12s ease-in-out infinite; /* Adjusted the duration */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(0%);
+      /* This creates a pause for one second at the middle */
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
