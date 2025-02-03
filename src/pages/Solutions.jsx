@@ -1,5 +1,7 @@
 import React from "react";
-import solutionimg from "../Js/solutionimg"; 
+import solutionimg from "../Js/solutionimg";
+import solutionPageBgLeft from "../assets/solutionPageBgLeft.webp";
+import solutionPageBgRight from "../assets/solutionPageBgRight.webp";
 
 const SolutionsSection = () => {
   return (
@@ -8,12 +10,12 @@ const SolutionsSection = () => {
       <img
         alt="Background Image"
         className="absolute top-0 left-0 z-[-2] hidden lg:block"
-        src="https://appdevs.net/_next/static/media/solutionPageBgLeft.292df356.webp"
+        src={solutionPageBgLeft}
       />
       <img
         alt="Background Image"
         className="absolute top-[60px] right-0 z-[-2] hidden lg:block"
-        src="https://appdevs.net/_next/static/media/solutionPageBgRight.e134874f.webp"
+        src={solutionPageBgRight}
       />
 
       {/* Section Content */}

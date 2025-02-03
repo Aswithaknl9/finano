@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Customization from '../assets/customization.png';
+import OnDemand from '../assets/onDemand.png';
+import QualityAssurance from '../assets/qualityAssurance.png';
 
 const services = [
   {
     title: "Custom Fintech Development",
     description: "Tailored FinTech software to streamline financial operations and innovation.",
-    imgSrc: "https://appdevs.net/_next/static/media/customization.f7d38ed8.webp",
+    imgSrc: Customization, 
     link: "/services/fintech-software-development",
     width: "w-[150px]",
     height: "h-[120px]",
@@ -13,7 +16,7 @@ const services = [
   {
     title: "Mobile App Development",
     description: "Advanced mobile solutions crafted for the finance industry.",
-    imgSrc: "https://appdevs.net/_next/static/media/onDemand.b7bc7309.webp",
+    imgSrc: OnDemand,  
     link: "/services/mobile-application-development",
     width: "w-[150px]",
     height: "h-[130px]",
@@ -21,7 +24,7 @@ const services = [
   {
     title: "Web Development",
     description: "Robust web solutions tailored for FinTech businesses.",
-    imgSrc: "https://appdevs.net/_next/static/media/qualityAssurance.fec3c921.webp",
+    imgSrc: QualityAssurance, 
     link: "/services/web-development",
     width: "w-[150px]",
     height: "h-[121px]",
@@ -29,7 +32,7 @@ const services = [
   {
     title: "UI/UX Design",
     description: "User-focused design for engaging, efficient FinTech applications.",
-    imgSrc: "https://appdevs.net/_next/static/media/customization.f7d38ed8.webp",
+    imgSrc: Customization,  
     link: "/services/ui-ux-design",
     width: "w-[150px]",
     height: "h-[120px]",
@@ -57,7 +60,7 @@ const ServicesSection = () => {
               key={index}
               className="bg-white shadow-md rounded-[30px] overflow-hidden p-1 flex lg:flex-row flex-col items-center text-center lg:text-left"
             >
-              
+              {/* Image */}
               <div className="w-full lg:w-auto flex justify-center bg-gray-100 rounded-l-[30px] p-6">
                 <img
                   alt={service.title}
@@ -89,25 +92,26 @@ const ServicesSection = () => {
           ))}
         </div>
 
+        {/* Show More Button */}
         <div className="text-center pt-10">
-  <a className="flex items-center justify-center" href="/services">
-    <span className="flex items-center gap-3 text-white bg-blue-600 py-3 px-5 rounded-md">
-      Show More Services
-      <span className="border-l border-white h-5 pl-3 ml-2 flex items-center">
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          strokeWidth="1.5" 
-          stroke="currentColor" 
-          className="w-5 h-5 text-white"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
-        </svg>
-      </span>
-    </span>
-  </a>
-</div>
+          <a className="flex items-center justify-center" href="/services">
+            <span className="flex items-center gap-3 text-white bg-blue-600 py-3 px-5 rounded-md">
+              Show More Services
+              <span className="border-l border-white h-5 pl-3 ml-2 flex items-center">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  strokeWidth="1.5" 
+                  stroke="currentColor" 
+                  className="w-5 h-5 text-white"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
       </div>
     </section>
   );

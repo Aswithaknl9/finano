@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import banner from '../assets/bannerBg.png'
 import Section from './section';
 import LogoImg from './logoimg';
 import Section1 from './section1';
 import Section2 from './section2';
-import Section3 from './section3';
 import Section4 from './section4';
 import Section5 from './section5';
 import Section6 from './section6';
@@ -21,7 +21,7 @@ const Home = () => {
       <div
         className="flex items-center justify-center min-h-screen relative flex-col pt-[10vh] bg-cover bg-center "
         style={{
-          backgroundImage: "url('https://appdevs.net/_next/static/media/bannerBg.787073cc.webp')",
+          backgroundImage: `url(${banner})`,
         }}
       >
         <div className="text-center  sm:px-[16px]  sm:max-w-2xl  mx-auto relative z-10 bg-opacity-75 rounded-lg">
@@ -93,7 +93,7 @@ const Home = () => {
       <Ection3
         title="Proud to Be an"
         subtitle="Products"
-        products={products} // Pass the products array here
+        products={products} 
       />
     </div>
       <Section4 />

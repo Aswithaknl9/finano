@@ -1,10 +1,19 @@
 import React from 'react';
+import remittance from '../assets/remittance.webp'
+import mobileBanking from '../assets/mobileBanking.webp'
+import digitalWallet from '../assets/digitalWallet.webp'
+import paymentGateway from '../assets/paymentGateway.webp'
+import currencyExchange from '../assets/currencyExchange.webp'
+import CrowdFunding from '../assets/crowdFunding.webp';
+import solutionElement from '../assets/solutionElement.webp';
+import sectionBg from '../assets/solutionSectionBg.webp';
+import solutionBg1 from '../assets/solutionBg1.png';
 
 const solutionsData = [
   {
     title: 'Mobile Banking Solutions',
     description: 'Seamless banking on-the-go with secure transactions and features.',
-    imgSrc: 'https://appdevs.net/_next/static/media/remittance.6985c065.webp',
+    imgSrc: remittance,
     link: '/solutions/mobile-banking-solutions',
     width: 'w-[207px]',
     height: 'h-[130px]',
@@ -12,7 +21,7 @@ const solutionsData = [
   {
     title: 'Remittance Solutions',
     description: 'Fast and affordable international money transfers made easy.',
-    imgSrc: 'https://appdevs.net/_next/static/media/mobileBanking.26967535.webp',
+    imgSrc: mobileBanking,
     link: '/solutions/remittance-solutions',
     width: 'w-[161px]',
     height: 'h-[130px]',
@@ -20,7 +29,7 @@ const solutionsData = [
   {
     title: 'Digital Wallet Solutions',
     description: 'Secure digital wallet for effortless payments and fund management.',
-    imgSrc: 'https://appdevs.net/_next/static/media/digitalWallet.6f01a52e.webp',
+    imgSrc: digitalWallet,
     link: '/solutions/digital-wallet-solutions',
     width: 'w-[148px]',
     height: 'h-[130px]',
@@ -28,7 +37,7 @@ const solutionsData = [
   {
     title: 'Payment Gateway Solutions',
     description: 'Reliable payment processing for online transactions and businesses.',
-    imgSrc: 'https://appdevs.net/_next/static/media/paymentGateway.38f212fa.webp',
+    imgSrc: paymentGateway,
     link: '/solutions/white-label-payment-gateway-solutions',
     width: 'w-[169px]',
     height: 'h-[130px]',
@@ -36,7 +45,7 @@ const solutionsData = [
   {
     title: 'Currency Exchange Solutions',
     description: 'Real-time currency conversion for global transactions at competitive rates.',
-    imgSrc: 'https://appdevs.net/_next/static/media/currencyExchange.b0e3cab5.webp',
+    imgSrc: currencyExchange,
     link: '/solutions/currency-exchange-software-solutions',
     width: 'w-[168px]',
     height: 'h-[130px]',
@@ -44,7 +53,7 @@ const solutionsData = [
   {
     title: 'Card Issuing Solution',
     description: 'Custom card solutions tailored for businesses and brands.',
-    imgSrc: 'https://appdevs.net/_next/static/media/currencyExchange.b0e3cab5.webp',
+    imgSrc: currencyExchange,
     link: '/solutions/card-issuing-solutions',
     width: 'w-[168px]',
     height: 'h-[130px]',
@@ -52,7 +61,7 @@ const solutionsData = [
   {
     title: 'Crowdfunding Solutions',
     description: 'Effective platform for raising funds and supporting projects with ease.',
-    imgSrc: 'https://appdevs.net/_next/static/media/crowdFunding.a17ce315.webp',
+    imgSrc: CrowdFunding,
     link: '/solutions/crowdfunding-solutions',
     width: 'w-[136px]',
     height: 'h-[130px]',
@@ -70,7 +79,7 @@ const SolutionsSection = () => {
         decoding="async"
         className="absolute w-full h-full top-0 left-0 z-[-2] lg:block hidden"
         style={{ color: 'transparent' }}
-        src="https://appdevs.net/_next/static/media/solutionSectionBg.217c0940.webp"
+        src={sectionBg}
       />
       <img
         alt="Solution"
@@ -80,15 +89,15 @@ const SolutionsSection = () => {
         decoding="async"
         className="xl:w-[200px] w-[150px] xl:h-[200px] h-[150px] absolute xl:top-10 top-24 left-1/2 translate-x-[-50%] lg:block hidden"
         style={{ color: 'transparent' }}
-        src="https://appdevs.net/_next/static/media/solutionElement.b9eb1a7d.webp"
+        src={solutionElement}
       />
       <div className="xl:max-w-[1280px] container mx-auto px-4">
         <div className="section_header mb-14">
           <div className="max-w-[730px] mx-auto text-center">
-            <h2 className="mb-2">
+            <h2 className="mb-2 text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] font-semibold">
               Explore <span className="text-[#7c3aed] inline">Solutions</span> and Discover How They Work and Boost Your Business
             </h2>
-            <span>
+            <span className='text-[#6b7280]'>
               Discover a wide range of solutions specifically designed to address your business challenges. Learn how our innovative offerings work to optimize processes and accelerate your business growth effectively.
             </span>
           </div>
@@ -109,7 +118,7 @@ const SolutionsSection = () => {
               bottom: 0,
               color: 'transparent',
             }}
-            src="https://appdevs.net/_next/static/media/solutionBg.db024656.webp"
+            src={solutionBg1}
           />
 
           {/* Solution Cards */}

@@ -1,4 +1,6 @@
 import React from 'react';
+import aboutsection from '../assets/aboutsection.png';
+import aboutsection2 from '../assets/aboutsection2.png';
 
 const Section4 = () => {
   return (
@@ -36,8 +38,8 @@ const Section4 = () => {
                 <rect width="52" height="52" rx="14" fill="#2563EB"></rect>
               </svg>
 
-              <img alt="About Image" loading="lazy" width="335" height="477" decoding="async" data-nimg="1" className="mt-[80px] xl:w-auto lg:w-[250px] lg:block hidden" style={{ color: 'transparent' }} src="https://appdevs.net/_next/static/media/aboutSection.846d64c5.png" />
-              <img alt="About Image" loading="lazy" width="335" height="477" decoding="async" data-nimg="1" className="lg:mb-[80px] xl:w-auto lg:w-[250px] sm:w-full w-auto h-auto" style={{ color: 'transparent' }} src="https://appdevs.net/_next/static/media/aboutSection2.95dac0c4.png" />
+              <img alt="About Image" loading="lazy" width="335" height="477" decoding="async" data-nimg="1" className="mt-[80px] xl:w-auto lg:w-[250px] lg:block hidden" style={{ color: 'transparent' }} src={aboutsection} />
+              <img alt="About Image" loading="lazy" width="335" height="477" decoding="async" data-nimg="1" className="lg:mb-[80px] xl:w-auto lg:w-[250px] sm:w-full w-auto h-auto" style={{ color: 'transparent' }} src={aboutsection2} />
             </div>
           </div>
         </div>

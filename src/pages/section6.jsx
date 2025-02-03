@@ -1,4 +1,5 @@
 import React from 'react';
+import technologiesBg from '../assets/technologiesBg.png';
 import TechnologyItem from './TechnologyItem';
 import { technologies } from '../Js/technologies';
 
@@ -16,7 +17,8 @@ const Section6 = () => {
       <div className="relative w-full font-medium">
         {/* Background Image */}
         <img 
-          src="https://appdevs.net/_next/static/media/technologiesBg.a55292ec.png" 
+          src={technologiesBg} 
+          loading="lazy" 
           alt="Technologies Background" 
           className="absolute inset-0 w-full h-full object-contain z-0"
         />

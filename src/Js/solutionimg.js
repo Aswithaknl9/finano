@@ -1,6 +1,13 @@
+import remittance from '../assets/remittance.webp'
+import remittancesolutions from '../assets/remittance.webp'
+import mobileBanking from '../assets/mobileBanking.webp'
+import digitalWallet from '../assets/digitalWallet.webp'
+import paymentGateway from '../assets/paymentGateway.webp'
+import currencyExchange from '../assets/currencyExchange.webp'
+import crowdFunding from '../assets/crowdFunding.webp'
 const solutionimg = [
   {
-    image: "https://appdevs.net/_next/static/media/remittance.6985c065.webp",
+    image: remittancesolutions,
     title: "Mobile Banking Solutions",
     description: "Seamless banking on-the-go with secure transactions and features.",
     link: "/solutions/mobile-banking-solutions",
@@ -9,7 +16,7 @@ const solutionimg = [
 
   },
   {
-    image: "https://appdevs.net/_next/static/media/mobileBanking.26967535.webp",
+    image: mobileBanking,
     title: "Remittance Solutions",
     description: "Fast and affordable international money transfers made easy.",
     link: "/solutions/remittance-solutions",
@@ -18,7 +25,7 @@ const solutionimg = [
 
   },
   {
-    image: "https://appdevs.net/_next/static/media/digitalWallet.6f01a52e.webp",
+    image:digitalWallet,
     title: "Digital Wallet Solutions",
     description: "Secure digital wallet for effortless payments and fund management.",
     link: "/solutions/digital-wallet-solutions",
@@ -26,7 +33,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/paymentGateway.38f212fa.webp",
+    image: paymentGateway,
     title: "Payment Gateway Solutions",
     description: "Reliable payment processing for online transactions and businesses.",
     link: "/solutions/white-label-payment-gateway-solutions",
@@ -34,7 +41,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/currencyExchange.b0e3cab5.webp",
+    image: currencyExchange,
     title: "Currency Exchange Solutions",
     description: "Real-time currency conversion for global transactions at competitive rates.",
     link: "/solutions/currency-exchange-software-solutions",
@@ -42,7 +49,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/currencyExchange.b0e3cab5.webp",
+    image: currencyExchange,
     title: "Card Issuing Solution",
     description: "Custom card solutions tailored for businesses and brands.",
     link: "/solutions/card-issuing-solutions",
@@ -50,7 +57,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/crowdFunding.a17ce315.webp",
+    image: crowdFunding,
     title: "Crowdfunding Solutions",
     description: "Effective platform for raising funds and supporting projects with ease.",
     link: "/solutions/crowdfunding-solutions",
@@ -58,7 +65,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/currencyExchange.b0e3cab5.webp",
+    image: currencyExchange,
     title: "Investment Management Solutions",
     description: "Comprehensive tools for effective portfolio management and growth.",
     link: "/solutions/investment-management-solutions",
@@ -66,7 +73,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/paymentGateway.38f212fa.webp",
+    image: paymentGateway,
     title: "Escrow Solutions",
     description: "Secure transactions with trusted escrow services for peace of mind.",
     link: "/solutions/escrow-solutions",
@@ -74,7 +81,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/digitalWallet.6f01a52e.webp",
+    image: digitalWallet,
     title: "AI Chatbot Solutions",
     description: "Comprehensive tools for effective portfolio management and growth.",
     link: "/solutions/ai-chatbot-solutions",
@@ -82,7 +89,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/mobileBanking.26967535.webp",
+    image: mobileBanking,
     title: "Online Booking Solutions",
     description: "Comprehensive tools for effective portfolio management and growth.",
     link: "/solutions/online-booking-solutions",
@@ -90,7 +97,7 @@ const solutionimg = [
     height: 'h-[150px]',
   },
   {
-    image: "https://appdevs.net/_next/static/media/remittance.6985c065.webp",
+    image: remittance,
     title: "Multi-vendor Solutions",
     description: "Flexible platform for multiple sellers to showcase and sell products.",
     link: "/solutions/multi-vendor-solutions",
