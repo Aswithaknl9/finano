@@ -212,13 +212,13 @@ export const dropdown = {
       description: 'Request tailored solutions to fit your unique business needs.',
     },
     {
-      path: '/help/support',
+      path: '/consultation',
       label: 'Talk to Expert',
       imgSrc: 'https://appdevs.net/_next/static/media/expert.18c17e9d.webp',
       description: 'Schedule a consultation with our experts for in-depth assistance.',
     },
     {
-      path: '/help/support',
+      path: '/generate-product-key',
       label: 'Generate Product Key',
       imgSrc: 'https://appdevs.net/_next/static/media/key.9bf65369.webp',
       description: 'A product key is essential to activate and install your application.',

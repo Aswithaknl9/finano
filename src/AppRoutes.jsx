@@ -36,6 +36,9 @@ import Documentation from "./Helpdropdownlist/Documentation";
 import Sales from "./Helpdropdownlist/Sales";
 import Techincal from "./Helpdropdownlist/Techincal";
 import Customization from "./Helpdropdownlist/Customization";
+import Consultation from "./Helpdropdownlist/Consultation";
+import ProductKeyForm from "./Helpdropdownlist/ProductKeyForm";
+import ContactSection from "./pages/ContactSection";
 
 const AppRoutes = () => {
   return (
@@ -82,7 +85,11 @@ const AppRoutes = () => {
       <Route path="/sales-support" element={<Sales />} />
       <Route path="/technical-support" element={<Techincal />} />
       <Route path="/customization" element={<Customization />} />
+      <Route path="/consultation" element={<Consultation />} />
+      <Route path="/generate-product-key" element={<ProductKeyForm />} />
+      <Route path="/contact" element={<ContactSection />} />
     </Routes>
+    
   );
 };
 

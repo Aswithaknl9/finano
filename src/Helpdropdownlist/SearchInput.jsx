@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-const SearchInput = ({ placeholder = "Search Documentation..." }) => {
-  const [query, setQuery] = useState("");
-
+const SearchInput = ({ setSearchQuery, placeholder = "Search Documentation..." }) => {
   return (
-    <div className="flex justify-center items-center w-full px-4"> {/* Centering & Padding for Mobile */}
-      <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"> 
-        {/* Adjust width dynamically on different screen sizes */}
+    <div className="flex justify-center items-center w-full px-4">
+      <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
         <input
           type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => setSearchQuery(e.target.value.toLowerCase())}
           placeholder={placeholder}
           className="h-12 w-full py-2 ps-10 pe-5 rounded-lg border border-gray-300 text-black text-sm shadow-sm placeholder-gray-500 focus:border-blue-500 focus:ring focus:ring-blue-200"
         />

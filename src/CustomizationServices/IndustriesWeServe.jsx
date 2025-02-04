@@ -1,3 +1,5 @@
+import solutionBg from "../assets/solutionBg.png"
+
 const IndustriesWeServe = () => {
     const industries = [
       { name: "Banking", description: "Enhance customer experience with seamless digital banking services.", img: "https://appdevs.net/_next/static/media/streamlinedOperations.873e8c0b.png" },
@@ -14,6 +16,16 @@ const IndustriesWeServe = () => {
       <section className="pt-32">
         <div className="xl:max-w-[1280px] container mx-auto px-4">
           <div className="bg-[#f7efff] py-10 px-6 sm:py-14 sm:px-10 rounded-[50px] overflow-hidden relative">
+          <img
+            alt="Background Image"
+            loading="lazy"
+            width="1366"
+            height="720"
+            decoding="async"
+            className="hidden sm:flex absolute "
+            src={solutionBg}
+            style={{ color: "transparent" }}
+          />
             <div className="text-center max-w-xl mx-auto mb-12 relative z-10">
               <h2 className="lg:text-[38px] font-bold mb-2">Industries We Serve</h2>
               <p className="text-[#6b7280]">Our expertise spans multiple sectors, delivering adaptable solutions tailored to unique industry needs.</p>

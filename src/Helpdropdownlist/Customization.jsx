@@ -4,6 +4,9 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import CustomizationServices from "../CustomizationServices/CustomizationServices";
 import IndustriesWeServe from "../CustomizationServices/IndustriesWeServe";
 import CustomizationProcess from "../CustomizationServices/CustomizationProcess";
+import WhyChooseAppDevs from "../CustomizationServices/WhyChooseAppDevs";
+import QuotationForm from "../CustomizationServices/QuotationForm";
+import FAQSection from "../CustomizationServices/faq";
 
 const Customization = () => {
   return (
@@ -50,6 +53,9 @@ const Customization = () => {
       <CustomizationServices />
       <IndustriesWeServe />
       <CustomizationProcess />
+      <WhyChooseAppDevs />
+      <QuotationForm />
+      <FAQSection />
     </section>
   );
 };

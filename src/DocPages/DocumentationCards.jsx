@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DocumentationCards = () => {
+const DocumentationCards = ({ searchQuery }) => {
   const products = [
     {
       title: 'QRPay Pro',
@@ -124,33 +124,43 @@ const DocumentationCards = () => {
     },
   ];
 
+
+  const filteredProducts = products.filter(product =>
+    product.title.toLowerCase().includes(searchQuery) || 
+    product.description.toLowerCase().includes(searchQuery)
+  );
+
   return (
     <div className="xl:max-w-[1280px] container mx-auto px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {products.map((product, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-primary__shadow border border-gray-200 r rounded-[20px] p-5 transition-all duration-300 ease-in-out hover:shadow-lg"
-          >
-            <a target="_blank" className="flex items-center" href={product.link}>
-              <div className="w-[60px] h-[60px] shadow-md border border-gray-200 rounded-full  bg-white flex justify-center items-center overflow-hidden mr-[20px]">
-                <img
-                  alt={`documentation product - ${product.title}`}
-                  loading="lazy"
-                  width="30"
-                  height="30"
-                  decoding="async"
-                  src={product.imgSrc}
-                  style={{ color: 'transparent' }}
-                />
-              </div>
-              <div className="w-[calc(100%-70px)]">
-                <h4 className="text-[20px] font-semibold mb-1">{product.title}</h4>
-                <span className="text-[15px] font-medium">{product.description}</span>
-              </div>
-            </a>
-          </div>
-        ))}
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg border border-gray-200 rounded-[20px] p-5 transition-all duration-300 ease-in-out hover:shadow-lg"
+            >
+              <a target="_blank" className="flex items-center" href={product.link}>
+                <div className="w-[60px] h-[60px] shadow-md border border-gray-200 rounded-full bg-white flex justify-center items-center overflow-hidden mr-[20px]">
+                  <img
+                    alt={`documentation product - ${product.title}`}
+                    loading="lazy"
+                    width="30"
+                    height="30"
+                    decoding="async"
+                    src={product.imgSrc}
+                    style={{ color: 'transparent' }}
+                  />
+                </div>
+                <div className="w-[calc(100%-70px)]">
+                  <h4 className="text-[20px] font-semibold mb-1">{product.title}</h4>
+                  <span className="text-[15px] text-[#6b7280] font-medium">{product.description}</span>
+                </div>
+              </a>
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-gray-500">No products found.</p>
+        )}
       </div>
     </div>
   );

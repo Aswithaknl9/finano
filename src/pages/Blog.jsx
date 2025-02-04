@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import BlogSearch from '../BlogPage/BlogSearch';
 import Right from './Right';
 import { blogPosts } from '../Js/blogPosts';
+import Blogleftpage from '../assets/productPageLeftBg.webp';
+import Blogrightpage from '../assets/solutionPageBgRight.webp';
 
 const Blog = () => {
   const [activeButton, setActiveButton] = useState('All');
@@ -15,19 +17,19 @@ const Blog = () => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative pt-[50px]">
       {/* Top-Left Background Image */}
       <img
         src="https://appdevs.net/_next/static/media/productPageLeftBg.321a9e4d.webp"
-        alt="Top Left Background"
-        className="absolute top-0 left-0 w-[150px] lg:w-[400px] z-[-1]"
+        alt="Left Background"
+        className="absolute top-0 left-0 w-[500px] h-auto z-10"
       />
-
-      {/* Top-Right Background Image */}
+      
+      {/* Top Right Image */}
       <img
         src="https://appdevs.net/_next/static/media/solutionPageBgRight.e134874f.webp"
-        alt="Top Right Background"
-        className="absolute right-0 w-[150px] lg:w-[500px]"
+        alt="Right Background"
+        className="absolute top-0 right-0 w-[500px] h-auto z-10"
       />
 
       <div className="flex flex-col items-center">
@@ -35,10 +37,10 @@ const Blog = () => {
           <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
             Our Blog
           </span>
-          <h1 className="font-semibold text-[48px] my-4">
+          <h1 className="font-semibold text-[30px] lg:text-[48px] my-4 leading-tight">
             Explore our insights and case studies
           </h1>
-          <p className="text-gray-700 text-[15px] mb-6">
+          <p className="text-gray-700 text-[14px] lg:text-[16px] mb-6">
             Unlock the full potential of your platform with our step-by-step
             guides and expert advice. Learn how to manage admin roles,
             customize branding, configure fees, set up push notifications, live
