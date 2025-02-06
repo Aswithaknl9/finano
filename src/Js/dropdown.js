@@ -96,6 +96,7 @@ export const dropdown = {
       label: 'Installation & Deployment',
       imgSrc: 'https://appdevs.net/_next/static/media/installation.6b01dece.webp',
       description: 'Smooth installation and deployment for seamless FinTech system integration.',
+       bgColor:'#dbe9ff'
     },
     {
       path: '/services/fintech-software-development',

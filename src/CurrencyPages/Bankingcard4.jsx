@@ -1,62 +1,73 @@
-import React from 'react';
+import React from "react";
+import team from "../assets/team.png";
+import sqa from "../assets/sqa.png";
+import knowledge from "../assets/knowledge.png";
+
+const problems = [
+  {
+    title: "Limited Access to Currency Conversion",
+    description: "Provides instant access to a wide range of currencies for seamless transactions.",
+    imgSrc: team,
+  },
+  {
+    title: "High Conversion Fees",
+    description: "Reduces costs with competitive exchange rates and transparent pricing.",
+    imgSrc: sqa,
+  },
+  {
+    title: "Inconsistent Exchange Rates",
+    description: "Offers real-time updates to ensure accurate and fair conversions.",
+    imgSrc: knowledge,
+  },
+  {
+    title: "Security Risks",
+    description: "Safeguards user transactions with encryption, KYC, and AML compliance.",
+    imgSrc: knowledge,
+  },
+  {
+    title: "Manual Processes",
+    description: "Automates currency exchange operations to minimize errors and save time.",
+    imgSrc: knowledge,
+  },
+  {
+    title: "Customer Dissatisfaction",
+    description: "Improves user experience with fast, reliable, and secure exchanges.",
+    imgSrc: knowledge,
+  },
+];
 
 const Bankingcard4 = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-6 px-4">
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image" src="https://appdevs.net/_next/static/media/team.442e2e75.png" />
+    <section className="pt-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+        {/* Section Header */}
+        <div className="section_header mb-7 lg:mb-12">
+          <div className="max-w-[775px] mx-auto text-center">
+          <div className="max-w-[780px] mx-auto text-center mb-12">
+            <h2 className="text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] font-semibold leading-tight">
+              What Problems Does a Currency Exchange Solution Solve?
+            </h2>
+          </div>
+          </div>
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Limited Access to Currency Conversion</h5>
-        <p className="text-sm text-[#6B7280]">Provides instant access to a wide range of currencies for seamless transactions.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/sqa.29e6cbd8.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">High Conversion Fees</h5>
-        <p className="text-sm text-[#6B7280]">Reduces costs with competitive exchange rates and transparent pricing.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Inconsistent Exchange Rates</h5>
-        <p className="text-sm text-[#6B7280]">Offers real-time updates to ensure accurate and fair conversions.</p>
-      </div>
 
-
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {problems.map((problem, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg border border-gray-200 rounded-[20px] py-6 px-6 lg:px-8"
+            >
+              <div className="w-12 h-12 bg-white shadow-md rounded-full flex justify-center items-center mb-4">
+                <img src={problem.imgSrc} alt={problem.title} className="w-5 h-5 object-contain" />
+              </div>
+              <h5 className="text-[18px] lg:text-[20px] font-semibold mb-3">{problem.title}</h5>
+              <p className="text-[#6b7280] text-sm">{problem.description}</p>
+            </div>
+          ))}
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Security Risks</h5>
-        <p className="text-sm text-[#6B7280]">Safeguards user transactions with encryption, KYC, and AML compliance.</p>
       </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Manual Processes</h5>
-        <p className="text-sm text-[#6B7280]">Automates currency exchange operations to minimize errors and save time.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Customer Dissatisfaction</h5>
-        <p className="text-sm text-[#6B7280]">Improves user experience with fast, reliable, and secure exchanges.</p>
-      </div>
-    </div>
+    </section>
   );
 };
 

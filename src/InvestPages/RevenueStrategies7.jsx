@@ -1,70 +1,68 @@
-import React from 'react';
+import React from "react";
+import transactionFees from "../assets/streamlinedOperations.png";
+import subscriptionPlans from "../assets/userManagement.png";
+import merchantPartnerships from "../assets/security.png";
+import financialIntegration from "../assets/insightfulAnalytics.png";
+import solutionBg from "../assets/solutionBg.png";
 
-const RevenueStrategies7 = () => {
-  const strategies = [
-    {
-      imgSrc: 'https://appdevs.net/_next/static/media/streamlinedOperations.873e8c0b.png',
-      imgWidth: 25,
-      imgHeight: 24,
-      title: 'Subscription Fees',
-      description:
-        'Offer subscription plans for clients to access advanced tools and features.',
-    },
-    {
-      imgSrc: 'https://appdevs.net/_next/static/media/userManagement.78ccbfb4.png',
-      imgWidth: 29,
-      imgHeight: 24,
-      title: 'Advisory Services',
-      description:
-        'Monetize by providing expert financial advice integrated with the solution.',
-    },
-    {
-      imgSrc: 'https://appdevs.net/_next/static/media/security.22ebe9d6.png',
-      imgWidth: 20,
-      imgHeight: 24,
-      title: 'Transaction Fees',
-      description:
-        'Charge small fees for each transaction processed through the platform.',
-    },
-    {
-      imgSrc: 'https://appdevs.net/_next/static/media/insightfulAnalytics.a8aebbd3.png',
-      imgWidth: 23,
-      imgHeight: 24,
-      title: 'Third-Party Partnerships',
-      description:
-        'Collaborate with fund managers and financial institutions for shared revenues.',
-    },
-  ];
+const profitMethods = [
+  {
+    title: "Subscription Fees",
+    description: "Offer subscription plans for clients to access advanced tools and features.",
+    imgSrc: transactionFees,
+  },
+  {
+    title: "Advisory Services",
+    description: "Monetize by providing expert financial advice integrated with the solution.",
+    imgSrc: subscriptionPlans,
+  },
+  {
+    title: "Transaction Fees",
+    description: "Charge small fees for each transaction processed through the platform.",
+    imgSrc: merchantPartnerships,
+  },
+  {
+    title: "Third-Party Partnerships",
+    description: "Collaborate with fund managers and financial institutions for shared revenues.",
+    imgSrc: financialIntegration,
+  },
+];
 
+const EWalletProfit = () => {
   return (
-    <div
-      className="relative  bg-center bg-cover py-12"
-      style={{ backgroundImage: 'url(https://appdevs.net/_next/static/media/solutionBg.db024656.webp)' }}
-    >
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 relative">
-        {strategies.map((strategy, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-[20px] shadow-lg md:px-5 px-4 md:py-6 py-4 z-20"
-          >
-            <div className="w-[48px] h-[48px] bg-white rounded-full shadow-lg flex items-center justify-center mb-4">
-              <img
-                alt="solution thumb"
-                loading="lazy"
-                width={strategy.imgWidth}
-                height={strategy.imgHeight}
-                decoding="async"
-                src={strategy.imgSrc}
-                style={{ color: 'transparent' }}
-              />
+    <section className="pt-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+        <div className="bg-[#EBF2FD] md:py-[40px] py-8 md:px-[30px] px-5 md:rounded-[50px] rounded-3xl">
+          <div className="section_header mb-12">
+            <div className="max-w-[900px] mx-auto text-center">
+              <h2 className="mb-2 lg:text-[48px] font-semibold md:text-[38px] sm:text-[28px] text-[24px]">
+              How Can Bank Owners Generate Profit from an <span className="text-[#7c3aed] inline">Investment Management Solution?</span>
+              </h2>
             </div>
-            <h5 className="md:text-[18px] font-semibold text-left mb-3">{strategy.title}</h5>
-            <p className="md:text-[#6B7280] text-[12px] text-left">{strategy.description}</p>
           </div>
-        ))}
+          <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 relative">
+            <img
+              alt="Background Image"
+              loading="lazy"
+              decoding="async"
+              className="z-10"
+              src={solutionBg}
+              style={{ position: 'absolute', height: '100%', width: '100%', inset: '0px', color: 'transparent' }}
+            />
+            {profitMethods.map((method, index) => (
+              <div key={index} className="bg-white rounded-[20px] shadow-md md:px-5 px-4 md:py-6 py-4 z-20">
+                <div className="w-[48px] h-[48px] bg-white rounded-full shadow-md flex items-center justify-center mb-4">
+                  <img alt="solution thumb" loading="lazy" width="25" height="24" src={method.imgSrc} style={{ color: 'transparent' }} />
+                </div>
+                <h5 className="md:text-[20px] font-semibold mb-3">{method.title}</h5>
+                <p className="text-[#6B7280] text-[14px] ">{method.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default RevenueStrategies7;
+export default EWalletProfit;

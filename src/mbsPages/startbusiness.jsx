@@ -1,89 +1,107 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import buy from "../assets/buy.png";
+import customize from "../assets/customize.png";
+import launch from "../assets/launch.png";
 
-const StartBusiness = () => {
+const MobileBankingSteps = () => {
+  const steps = [
+    {
+      title: "Service Scope",
+      imgSrc: buy,
+    },
+    {
+      title: "Features and Packages",
+      imgSrc: customize,
+    },
+    {
+      title: "Brand Customization",
+      imgSrc: customize,
+    },
+    {
+      title: "Integration and Setup",
+      imgSrc: launch,
+    },
+    {
+      title: "Training Deployment",
+      imgSrc: launch,
+    },
+    {
+      title: "Launch and Market",
+      imgSrc: launch,
+    },
+  ];
+
   return (
-    <div>
-      <section className="py-[130px]">
-        <div className="xl:max-w-[1280px] container mx-auto px-4">
-          <div className="relative rounded-[30px] overflow-hidden z-10 xl:py-20 py-14 px-14 bg-[linear-gradient(90deg,#061A46_0%,#153885_100%)]">
-            <div className="absolute top-0 left-0 z-[-1]">
-              <img alt="process" src="https://appdevs.net/_next/static/media/process-bg.c4350ce0.webp" style={{ color: 'transparent' }} />
-            </div>
-            <div className="absolute top-0 left-0 z-[-1]">
-              <img alt="process" src="https://appdevs.net/_next/static/media/process-element.f0d83ec5.webp" style={{ color: 'transparent' }} />
-            </div>
-            <div className="mb-8 lg:mb-10 grid grid-cols-12">
-              <div className="text-center col-span-12 lg:col-span-8 lg:col-start-3">
-                <h2 className="text-white font-semibold max-w-3xl text-5xl mb-4">Steps to Start a Mobile Banking Business</h2>
-                <p className="text-white lg:w-[80%] max-w-3xl mx-auto">
-                  Launching a mobile banking solution involves several key steps to ensure smooth implementation and adoption.
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-5">
-              {/* Step 1 */}
-              <div className="text-center relative">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full text-2xl font-bold bg-[#DBEAFE] mx-auto mb-4">
-                  <img alt="Service Scope" className="object-cover w-[70%]" src="https://appdevs.net/_next/static/media/buy.78ac122f.webp" style={{ color: 'transparent' }} />
-                </div>
-                <h4 className="text-white text-[15px] mb-2.5">Service Scope</h4>
-                <div className="arrow arrow-right"></div>
-              </div>
-              {/* Step 2 */}
-              <div className="text-center relative">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full text-2xl font-bold bg-[#DBEAFE] mx-auto mb-4">
-                  <img alt="Features and Packages" className="object-cover w-[70%]" src="https://appdevs.net/_next/static/media/customize.3899f146.webp" style={{ color: 'transparent' }} />
-                </div>
-                <h4 className="text-white text-[15px] mb-2.5">Features and Packages</h4>
-                <div className="arrow arrow-right"></div>
-              </div>
-              {/* Step 3 */}
-              <div className="text-center relative">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full text-2xl font-bold bg-[#DBEAFE] mx-auto mb-4">
-                  <img alt="Brand Customization" className="object-cover w-[70%]" src="https://appdevs.net/_next/static/media/customize.3899f146.webp" style={{ color: 'transparent' }} />
-                </div>
-                <h4 className="text-white text-[15px] mb-2.5">Brand Customization</h4>
-                <div className="arrow arrow-right"></div>
-              </div>
-              {/* Step 4 */}
-              <div className="text-center relative">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full text-2xl font-bold bg-[#DBEAFE] mx-auto mb-4">
-                  <img alt="Integration and Setup" className="object-cover w-[70%]" src="https://appdevs.net/_next/static/media/launch.20325f70.webp" style={{ color: 'transparent' }} />
-                </div>
-                <h4 className="text-white text-[15px] mb-2.5">Integration and Setup</h4>
-                <div className="arrow arrow-right"></div>
-              </div>
-              <div className="text-center relative">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full text-2xl font-bold bg-[#DBEAFE] mx-auto mb-4">
-                  <img alt="Integration and Setup" className="object-cover w-[70%]" src="https://appdevs.net/_next/static/media/launch.20325f70.webp" style={{ color: 'transparent' }} />
-                </div>
-                <h4 className="text-white text-[15px] mb-2.5">Training Development</h4>
-                <div className="arrow arrow-right"></div>
-              </div>
-              <div className="text-center relative">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full text-2xl font-bold bg-[#DBEAFE] mx-auto mb-4">
-                  <img alt="Integration and Setup" className="object-cover w-[70%]" src="https://appdevs.net/_next/static/media/launch.20325f70.webp" style={{ color: 'transparent' }} />
-                </div>
-                <h4 className="text-white text-[15px] mb-2.5">Launch and Market</h4>
-                <div className="arrow arrow-first"></div>
-              </div>
-            </div>
-            <div className="mt-7 lg:mt-14 text-center">
-            <a 
-              className="bg-[#2974E7] text-white  font-semibold px-6 py-4 rounded-md text-center hover:bg-[#1E40AF] transition duration-300 items-center justify-center"
-              href="/consultation"
-              aria-label="Get Free Consultation"
-            >
-              Get Free Consultation <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-sm" />
-            </a>
-            </div>
+    <section className="py-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+        <div className="relative rounded-[30px] overflow-hidden z-10 xl:py-20 py-14 px-14 bg-gradient-to-r from-[#061A46] to-[#153885]">
+
+          {/* Background Images */}
+          <img 
+            alt="process" 
+            loading="lazy" 
+            className="absolute top-0 left-0 z-[-1] object-cover w-full h-full" 
+            src="	https://appdevs.net/_next/static/media/process-bg.c4350ce0.webp" 
+          />
+          <img 
+            alt="process" 
+            loading="lazy" 
+            className="absolute top-0 left-0 z-[-1] object-cover w-96" 
+            src="https://appdevs.net/_next/static/media/process-element.f0d83ec5.webp" 
+          />
+
+          {/* Heading Section */}
+          <div className="mb-8 lg:mb-10 text-center max-w-2xl mx-auto">
+            <h2 className="text-white text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] font-semibold mb-4 leading-tight">
+              Steps to Start a Mobile Banking Business
+            </h2>
+            <p className="text-white text-[14px] lg:text-[16px]">
+              Launching a mobile banking solution involves several key steps to ensure smooth implementation and adoption.
+            </p>
           </div>
+
+          {/* Steps Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+            {steps.map((step, index) => (
+              <div key={index} className="text-center relative">
+                <div className="w-14 h-14 flex justify-center items-center rounded-full bg-[#DBEAFE] mx-auto mb-4">
+                  <img 
+                    alt={step.title} 
+                    loading="lazy" 
+                    className="object-cover w-10" 
+                    src={step.imgSrc} 
+                  />
+                </div>
+                <h4 className="text-white text-sm lg:text-[15px] font-semibold">{step.title}</h4>
+                
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="mt-7 lg:mt-14 text-center">
+            <a 
+              href="/consultation" 
+              className="bg-blue-600 hover:bg-blue-500 transition duration-300 px-6 py-3 text-white text-sm font-medium rounded-lg flex items-center justify-center mx-auto w-fit shadow-lg"
+            >
+              Get Free Consultation
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                strokeWidth="1.5" 
+                stroke="currentColor" 
+                className="w-4 h-4 ml-2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+              </svg>
+            </a>
+          </div>
+
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default StartBusiness;
+export default MobileBankingSteps;

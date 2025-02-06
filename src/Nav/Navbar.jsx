@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import one from '../assets/one.png';
 import Dropdown from '../dropdown/Dropdown';
-import { dropdown } from '../Js/dropdown'; 
+import { dropdown } from '../Js/dropdown';
+
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -161,20 +163,21 @@ const Navbar = () => {
               </li>
 
               <Dropdown
-                title="Company"
-                links={dropdown.services}
-                isOpen={openDropdown === 'Company'}
-                onMouseEnter={() => handleMouseEnter('company')}
-                onMouseLeave={handleMouseLeave}
-              />
+              title="Company"
+              links={dropdown.company}
+              isOpen={openDropdown === 'company'}
+              onMouseEnter={() => handleMouseEnter('company')}
+              onMouseLeave={handleMouseLeave}
+            />
 
               <Dropdown
                 title="Help"
-                links={dropdown.services}
+                links={dropdown.help}
                 isOpen={openDropdown === 'help'}
                 onMouseEnter={() => handleMouseEnter('help')}
                 onMouseLeave={handleMouseLeave}
               />
+              
               
             </ul>
           </div>

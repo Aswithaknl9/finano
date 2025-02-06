@@ -1,63 +1,87 @@
-import React from 'react';
+import React from "react";
+import accessToCapital from "../assets/team.png";
+import projectVisibility from "../assets/sqa.png";
+import adminCosts from "../assets/knowledge.png";
+import donorEngagement from "../assets/knowledge.png";
+import fundDistribution from "../assets/knowledge.png";
+import complianceChallenges from "../assets/knowledge.png";
 
-const Bankingcard6 = () => {
+const crowdfundingProblems = [
+  {
+    title: "Access to Capital",
+    description:
+      "Simplifies the fundraising process, enabling startups and organizations to gather financial support from global backers.",
+    imgSrc: accessToCapital,
+  },
+  {
+    title: "Lack of Visibility for Projects",
+    description:
+      "Provides a platform to showcase projects, attracting potential investors and contributors.",
+    imgSrc: projectVisibility,
+  },
+  {
+    title: "High Administrative Costs",
+    description:
+      "Automates fund collection, reducing manual efforts and operational expenses.",
+    imgSrc: adminCosts,
+  },
+  {
+    title: "Limited Donor Engagement",
+    description:
+      "Offers features like live updates, backer communication, and social media integration to keep donors engaged.",
+    imgSrc: donorEngagement,
+  },
+  {
+    title: "Inefficient Fund Distribution",
+    description:
+      "Ensures transparent and timely disbursement of raised funds to project owners.",
+    imgSrc: fundDistribution,
+  },
+  {
+    title: "Regulatory and Compliance Challenges",
+    description:
+      "Integrates compliance tools to meet regional and global crowdfunding regulations.",
+    imgSrc: complianceChallenges,
+  },
+];
+
+const CrowdfundingProblems = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-6 px-4">
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image" src="https://appdevs.net/_next/static/media/team.442e2e75.png" />
+    <section className="pt-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+        {/* Section Header */}
+        <div className="section_header mb-7 lg:mb-12 text-center">
+          <div className="max-w-[775px] mx-auto">
+            <h2 className="text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] font-semibold leading-tight">
+              What Problems Does a Crowdfunding Solution Solve?
+            </h2>
+          </div>
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Access to Capital</h5>
-        <p className="text-sm text-[#6B7280]">Simplifies the fundraising process, enabling startups and organizations to gather financial support from global backers.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/sqa.29e6cbd8.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Lack of Visibility for Projects</h5>
-        <p className="text-sm text-[#6B7280]">Provides a platform to showcase projects, attracting potential investors and contributors.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">High Administrative Costs</h5>
-        <p className="text-sm text-[#6B7280]">Automates fund collection, reducing manual efforts and operational expenses.</p>
-      </div>
 
-
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {crowdfundingProblems.map((problem, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg border border-gray-200 rounded-[20px] py-6 px-6 lg:px-8 transition-transform transform hover:scale-105"
+            >
+              <div className="w-12 h-12 bg-white shadow-md rounded-full flex justify-center items-center mb-4">
+                <img
+                  src={problem.imgSrc}
+                  alt={problem.title}
+                  className="w-6 h-6 object-contain"
+                />
+              </div>
+              <h5 className="text-[18px] lg:text-[20px] font-semibold mb-3">
+                {problem.title}
+              </h5>
+              <p className="text-gray-600 text-sm">{problem.description}</p>
+            </div>
+          ))}
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Limited Donor Engagement</h5>
-        <p className="text-sm text-[#6B7280]">Offers features like live updates, backer communication, and social media integration to keep donors engaged.</p>
       </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Inefficient Fund Distribution</h5>
-        <p className="text-sm text-[#6B7280]">Ensures transparent and timely disbursement of raised funds to project owners.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Regulatory and Compliance Challenges</h5>
-        <p className="text-sm text-[#6B7280]">Integrates compliance tools to meet regional and global crowdfunding regulations.</p>
-      </div>
-    </div>
+    </section>
   );
 };
 
-export default Bankingcard6;
+export default CrowdfundingProblems;

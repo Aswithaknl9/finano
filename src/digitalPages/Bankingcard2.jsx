@@ -1,62 +1,87 @@
-import React from 'react';
+import React from "react";
+import cashDependency from "../assets/team.png";
+import timeConsuming from "../assets/sqa.png";
+import securityRisks from "../assets/knowledge.png";
+import paymentMethods from "../assets/knowledge.png";
+import bankingAccess from "../assets/knowledge.png";
+import financialTransparency from "../assets/knowledge.png";
+
+const problems = [
+  {
+    title: "Cash Dependency",
+    description: "Reduces reliance on cash by enabling secure digital transactions.",
+    imgSrc: cashDependency,
+  },
+  {
+    title: "Time-Consuming Payments",
+    description: "Speeds up transactions with instant payments across platforms.",
+    imgSrc: timeConsuming,
+  },
+  {
+    title: "Security Risks",
+    description: "Protects user data with encryption, 2FA, and fraud detection features.",
+    imgSrc: securityRisks,
+  },
+  {
+    title: "Limited Payment Methods",
+    description: "Offers multiple payment options, including bank transfers, cards, and QR codes.",
+    imgSrc: paymentMethods,
+  },
+  {
+    title: "Inaccessible Banking Services",
+    description: "Provides unbanked users with an easy-to-access financial tool.",
+    imgSrc: bankingAccess,
+  },
+  {
+    title: "Lack of Financial Transparency",
+    description: "Enables detailed transaction history and spending analytics for better money management.",
+    imgSrc: financialTransparency,
+  },
+];
 
 const Bankingcard2 = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-6 px-4">
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image" src="https://appdevs.net/_next/static/media/team.442e2e75.png" />
+    <section className="pt-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+        
+        {/* Section Header */}
+        <div className="section_header mb-7 lg:mb-12 text-center">
+        <div className="max-w-[780px] mx-auto text-center mb-12">
+          <h2 className="text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] font-semibold">
+            What Problems Does an E-Wallet Solution Solve?
+          </h2>
+          </div>
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Cash Dependency</h5>
-        <p className="text-sm text-[#6B7280]">Reduces reliance on cash by enabling secure digital transactions.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/sqa.29e6cbd8.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Time-Consuming Payments</h5>
-        <p className="text-sm text-[#6B7280]">Speeds up transactions with instant payments across platforms.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Security Risks</h5>
-        <p className="text-sm text-[#6B7280]">Protects user data with encryption, 2FA, and fraud detection features.</p>
-      </div>
 
+        {/* Problems Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {problems.map((problem, index) => (
+            <div 
+              key={index} 
+              className="bg-white shadow-lg border border-gray-200 rounded-[20px] py-6 px-6 lg:px-8 text-left"
+            >
+              {/* Icon */}
+              <div className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center mb-4">
+                <img 
+                  alt={problem.title} 
+                  loading="lazy" 
+                  width="22" 
+                  height="20" 
+                  className="object-contain" 
+                  src={problem.imgSrc} 
+                />
+              </div>
 
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
+              {/* Title & Description (Now starts from a new line) */}
+              <h5 className="text-lg lg:text-xl font-semibold mb-2">{problem.title}</h5>
+              <p className="text-[#6b7280] text-sm">{problem.description}</p>
+
+            </div>
+          ))}
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Limited Payment Methods</h5>
-        <p className="text-sm text-[#6B7280]">Offers multiple payment options, including bank transfers, cards, and QR codes.</p>
+
       </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Inaccessible Banking Services</h5>
-        <p className="text-sm text-[#6B7280]">Provides unbanked users with an easy-to-access financial tool.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Lack of Financial Transparency</h5>
-        <p className="text-sm text-[#6B7280]">Enables detailed transaction history and spending analytics for better money management.</p>
-      </div>
-    </div>
+    </section>
   );
 };
 

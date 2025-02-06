@@ -11,68 +11,81 @@ import TechnologyStack from '../mbsPages/TechnologyStack';
 import ProductSection from '../mbsPages/ProductSection';
 import BenefitsSection from '../mbsPages/BenefitsSection';
 import CallToActionSection from '../mbsPages/CallToActionSection';
+import solutionLeftPage from '../assets/solutionPageBgLeft.webp';
+import solutionRightPage from '../assets/solutionPageBgRight.webp';
 
 const MobileBankSolution = () => {
   return (
-    <section className="pt-24 relative">
-      {/* Header Section */}
-      <div
-        className="bg-cover bg-no-repeat flex items-center justify-center px-6 md:px-12"
-        style={{
-          backgroundImage: 'url(https://appdevs.net/_next/static/media/servicePageBgLeft.292df356.webp), url(https://appdevs.net/_next/static/media/servicePageBgRight.e134874f.webp)',
-          backgroundPosition: 'left top, right top',
-          backgroundSize: 'contain',
-          minHeight: '500px',
-        }}
-      >
-        <div className="text-center max-w-2xl mx-auto p-6">
-          <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-xs px-3 py-1 font-semibold mb-4 inline-block">
-            DIGITAL MOBILE BANKING SOLUTIONS
-          </span>
-          <h1 className="text-3xl md:text-5xl font-semibold md:mb-6">
-            A Comprehensive Guide to Mobile Banking Solutions
-          </h1>
-          <p className="text-[#6B7280] text-sm md:text-base mb-6">
-            This guide explores the fundamentals of mobile banking solutions, including key features, profitability strategies for banks and entrepreneurs, and the necessary steps for launching a mobile banking platform.
-          </p>
-          <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center">
-            <a 
-              className="bg-[#2974E7] text-white font-semibold px-6 py-2 rounded-md text-center hover:bg-[#1E40AF] transition duration-300 flex items-center justify-center"
-              href="/consultation"
-              aria-label="Get Free Consultation"
-            >
-              Get Free Consultation <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-sm" />
-            </a>
-            <a 
-              className="border-2 border-[#2974E7] text-[#2974E7] font-semibold px-6 py-2 rounded-md text-center hover:bg-[#7C3AED] hover:border-[#7C3AED] hover:text-white transition duration-300" 
-              href="#product"
-              aria-label="See Product on Mobile Banking"
-            >
-              See Product on Mobile Banking
-            </a>
-          </div>
-        </div>
-      </div>
-
+    <section class="pt-[180px] relative">
+  
+  <img 
+    alt="Background Image Left" 
+    loading="lazy" 
+    width="795" 
+    height="777" 
+    decoding="async" 
+    class="absolute top-0 left-0 z-[-2] hidden lg:block" 
+    src={solutionLeftPage}
+  />
+  <img 
+    alt="Background Image Right" 
+    loading="lazy" 
+    width="558" 
+    height="799" 
+    decoding="async" 
+    class="absolute top-[60px] right-0 z-[-2] hidden lg:block" 
+    src={solutionRightPage}
+  />
+  
+  
+  <div class="container mx-auto px-4 text-center xl:max-w-[1032px]">
+    <span class="text-[12px] font-semibold text-[#115E59] bg-[#CCFBF1] rounded-full py-1 px-3 mb-6 inline-block">
+      DIGITAL MOBILE BANKING SOLUTIONS
+    </span>
+    
+    <h1 class="mb-4 text-[30px] md:text-[48px]  lg:text-[72px] font-semibold leading-tight">
+      A Comprehensive Guide to Mobile Banking Solutions
+    </h1>
+    
+    <p class="w-[90%] md:w-[80%] mx-auto text-[#6b7280] text-[14px] md:text-[16px] lg:text-[16px] leading-relaxed">
+      This guide explores the fundamentals of mobile banking solutions, including their key features, the problems they solve, profitability strategies for banks and entrepreneurs, and the necessary steps for launching a mobile banking platform.
+    </p>
+    
+   
+    <div class="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-3">
+      <a class="font-semibold bg-[#2974E7] text-white py-3 px-6 rounded-lg flex items-center space-x-2" href="/consultation">
+        <span>Get Free Consultation</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+        </svg>
+      </a>
+      
+      <a class="font-semibold border border-[#2974E7] text-[#2974E7] py-3 px-6 rounded-lg hover:bg-[#7c3aed] hover:text-white transition-all duration-300 hover:border-transparent" href="#product">
+        See Product on Mobile Banking
+      </a>
+    </div>
+    </div>
+  
       {/* Problem Solution Section */}
-      <section className="pt-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-semibold mb-4">
-            What Problems Does a Mobile Banking Solution Solve?
-          </h1>
-        </div>
+
         <Bankingcard />
-      </section>
+      
 
       {/* Key Features Section */}
-      <section className="pt-14 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-semibold mb-4">
-            Key Features of a Robust <span className="text-[#7C3AED]">Banking Solution</span>
-          </h1>
-          <p className="text-[#6B7280] text-sm md:text-base">
-            A comprehensive mobile banking platform should cater to both administrative needs for the bank and functional needs for the end users, ensuring a secure and user-friendly experience for all.
-          </p>
+      <section className="pt-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+      <div className="section_header lg:mb-12 mb-8">
+          <div className="max-w-[775px] mx-auto text-center">
+            <h2 className="mb-4 text-[24px] sm:text-[28px] md:text-[38px]  lg:text-[48px] font-semibold leading-tight">
+              Key Features of a Robust Mobile{" "}
+              <span className="text-[#7c3aed] inline">Banking Solution</span>
+            </h2>
+            <p className='text-[14px] md:text-[16px] lg:text-[16px] text-[#6b7280]'>
+              A comprehensive mobile banking platform should cater to both administrative
+              needs for the bank and functional needs for the end users, ensuring a secure
+              and user-friendly experience for all.
+            </p>
+          </div>
         </div>
         <div className="container mx-auto p-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -80,19 +93,13 @@ const MobileBankSolution = () => {
             <ForEndUsers />
           </div>
         </div>
-      </section>
-
-      {/* Revenue Strategies Section */}
-      <section className="pt-14 px-6">
-        <div className="max-w-4xl mx-auto text-center bg-[#EBF2FD] rounded-3xl p-6">
-          <h1 className="text-3xl md:text-5xl font-semibold mb-4">
-            How Can Bank Owners Generate Profit from a <span className="text-[#7C3AED]">Mobile Banking Solution?</span>
-          </h1>
-          <RevenueStrategies />
         </div>
       </section>
 
-      {/* Additional Sections */}
+      {/* Revenue Strategies Section */}
+     
+      <RevenueStrategies />
+
       <Startbusiness />
       <RequirementsSection />
       <TechnologyStack />

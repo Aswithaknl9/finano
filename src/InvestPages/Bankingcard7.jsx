@@ -1,63 +1,88 @@
-import React from 'react';
+import React from "react";
+import cashDependency from "../assets/team.png";
+import timeConsuming from "../assets/sqa.png";
+import securityRisks from "../assets/knowledge.png";
+import paymentMethods from "../assets/knowledge.png";
+import bankingAccess from "../assets/knowledge.png";
+import financialTransparency from "../assets/knowledge.png";
 
-const Bankingcard7 = () => {
+const problems = [
+  {
+    title: "Inefficient Portfolio Management",
+    description: "Simplifies tracking and optimizing diverse investment portfolios for clients and institutions.",
+    imgSrc: cashDependency,
+  },
+  {
+    title: "Lack of Investor Insights",
+    description: "Provides actionable analytics and reports, enabling informed decision-making for better returns.",
+    imgSrc: timeConsuming,
+  },
+  {
+    title: "Time-Consuming Manual Processes",
+    description: "Automates routine tasks such as reporting, compliance checks, and transaction monitoring.",
+    imgSrc: securityRisks,
+  },
+  {
+    title: "Compliance Challenges",
+    description: "Ensures adherence to financial regulations and guidelines with built-in compliance tools.",
+    imgSrc: paymentMethods,
+  },
+  {
+    title: "Limited Accessibility for Clients",
+    description: "Offers a user-friendly interface for clients to access and manage their investments anytime.",
+    imgSrc: bankingAccess,
+  },
+  {
+    title: "High Operational Costs",
+    description: "Reduces administrative overheads with streamlined processes and digital tools.",
+    imgSrc: financialTransparency,
+  },
+];
+
+const Bankingcard2 = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-6 px-4">
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image" src="https://appdevs.net/_next/static/media/team.442e2e75.png" />
+    <section className="pt-[130px]">
+      <div className="xl:max-w-[1280px] container mx-auto px-4">
+        
+        {/* Section Header */}
+        <div className="section_header mb-7 lg:mb-12 text-center">
+        <div className="max-w-[780px] mx-auto text-center mb-12">
+          <h2 className="text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] font-semibold">
+          What Problems Does an Investment Management Solution Solve?
+          </h2>
+          </div>
         </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Inefficient Portfolio Management</h5>
-        <p className="text-sm text-[#6B7280]">Simplifies tracking and optimizing diverse investment portfolios for clients and institutions.</p>
-      </div>
-      
-      <div className="bg-white shadow-lg border rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/sqa.29e6cbd8.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Lack of Investor Insights</h5>
-        <p className="text-sm text-[#6B7280]">Provides actionable analytics and reports, enabling informed decision-making for better returns.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Time-Consuming Manual Processes</h5>
-        <p className="text-sm text-[#6B7280]">Automates routine tasks such as reporting, compliance checks, and transaction monitoring.</p>
-      </div>
 
+        {/* Problems Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {problems.map((problem, index) => (
+            <div 
+              key={index} 
+              className="bg-white shadow-lg border border-gray-200 rounded-[20px] py-6 px-6 lg:px-8 text-left"
+            >
+              {/* Icon */}
+              <div className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center mb-4">
+                <img 
+                  alt={problem.title} 
+                  loading="lazy" 
+                  width="22" 
+                  height="20" 
+                  className="object-contain" 
+                  src={problem.imgSrc} 
+                />
+              </div>
 
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Compliance Challenges</h5>
-        <p className="text-sm text-[#6B7280]">Ensures adherence to financial regulations and guidelines with built-in compliance tools.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">Limited Accessibility for Clients</h5>
-        <p className="text-sm text-[#6B7280]">Offers a user-friendly interface for clients to access and manage their investments anytime.</p>
-      </div>
-      
-      
-      <div className="bg-white shadow-lg border  rounded-[20px] py-5 px-8 lg:px-8">
-        <div className="w-12 h-12 bg-white shadow-lg rounded-full flex justify-center items-center mb-4">
-          <img alt="Choose Image"  src="https://appdevs.net/_next/static/media/knowledge.0e41d61b.png" />
-        </div>
-        <h5 className="text-[18px] lg:text-[20px] mb-3 font-semibold">High Operational Costs</h5>
-        <p className="text-sm text-[#6B7280]">Reduces administrative overheads with streamlined processes and digital tools.</p>
-      </div>
-    </div>
+              {/* Title & Description (Now starts from a new line) */}
+              <h5 className="text-lg lg:text-xl font-semibold mb-2">{problem.title}</h5>
+              <p className="text-[#6b7280] text-sm">{problem.description}</p>
 
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
   );
 };
 
-export default Bankingcard7;
+export default Bankingcard2;

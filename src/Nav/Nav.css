@@ -1,0 +1,10 @@
+@media (max-width: 1024px) { /* Targets screens below 1024px (Mobile View) */
+    .mobile-menu li:not(:first-child) { 
+      display: none; /* Hide all menu items except Home */
+    }
+  
+    .mobile-menu .dropdown {
+      display: block; /* Ensure dropdowns still work */
+    }
+  }
+  
