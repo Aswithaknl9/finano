@@ -24,17 +24,17 @@ const SubscribeSection = () => {
             src="https://appdevs.net/_next/static/media/avatarElement.4e13ab9f.png"
           />
           <div className="sm:flex block items-center relative z-[1]">
-            <div className="lg:w-[94px] lg:h-[94px] w-20 h-20 lg:rounded-[20px] rounded-xl flex items-center justify-center bg-backgroungdd  sm:mb-0 mb-5">
-              <img
-                alt="News Icon"
-                loading="lazy"
-                width="60"
-                height="42"
-                decoding="async"
-                className="lg:w-auto  px-2 py-2  rounded-[10px]"
-                src="https://appdevs.net/_next/static/media/newsIcon.37e79141.png"
-              />
-            </div>
+          <div class="lg:w-[94px] lg:h-[94px] w-14 h-14 lg:rounded-[20px] rounded-xl flex items-center justify-center bg-backgroungdd sm:mb-0 mb-5">
+            <img 
+              alt="Background Image" 
+              loading="lazy" 
+              width="60" 
+              height="42" 
+              decoding="async" 
+              class="lg:w-auto w-8"
+              src="https://appdevs.net/_next/static/media/newsIcon.37e79141.png"
+            />
+          </div>
             <div className="lg:ms-6 sm:ms-4 lg:w-[370px]">
               <h3 className="lg:text-[30px] md:text-[24px] text-[18px] font-semibold mb-2">
                 Subscribe to Newsletter

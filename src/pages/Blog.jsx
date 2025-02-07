@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import BlogSearch from '../BlogPage/BlogSearch';
 import Right from './Right';
 import { blogPosts } from '../Js/blogPosts';
-import Blogleftpage from '../assets/productPageLeftBg.webp';
-import Blogrightpage from '../assets/solutionPageBgRight.webp';
+import productPageLeftBg from '../assets/productPageLeftBg.webp';
+import solutionPageBgRight from '../assets/solutionPageBgRight.webp';
 
 const Blog = () => {
   const [activeButton, setActiveButton] = useState('All');
@@ -17,37 +17,30 @@ const Blog = () => {
   };
 
   return (
-    <section className="relative pt-[50px]">
+    <section className="relative py-[180px]">
       {/* Top-Left Background Image */}
-      <img
-        src="https://appdevs.net/_next/static/media/productPageLeftBg.321a9e4d.webp"
-        alt="Left Background"
-        className="absolute top-0 left-0 w-[500px] h-auto z-10"
-      />
+      <img alt="Background Image" loading="lazy" width="777" height="946" decoding="async" data-nimg="1" class="absolute top-0 left-0 z-10 overflow-hidden hidden lg:block" src={productPageLeftBg} />
       
       {/* Top Right Image */}
-      <img
-        src="https://appdevs.net/_next/static/media/solutionPageBgRight.e134874f.webp"
-        alt="Right Background"
-        className="absolute top-0 right-0 w-[500px] h-auto z-10"
-      />
+      <img alt="Background Image" loading="lazy" width="558" height="799" decoding="async" data-nimg="1" class="absolute top-0 right-0 z-10 overflow-hidden hidden lg:block" src={solutionPageBgRight} />
 
-      <div className="flex flex-col items-center">
-        <div className="text-center max-w-2xl p-8 mt-24">
-          <span className="text-[#115E59] bg-[#CCFBF1] rounded-full text-[10px] px-3 py-1 font-semibold mb-6">
-            Our Blog
-          </span>
-          <h1 className="font-semibold text-[30px] lg:text-[48px] my-4 leading-tight">
-            Explore our insights and case studies
-          </h1>
-          <p className="text-gray-700 text-[14px] lg:text-[16px] mb-6">
-            Unlock the full potential of your platform with our step-by-step
-            guides and expert advice. Learn how to manage admin roles,
-            customize branding, configure fees, set up push notifications, live
-            chat, and more.
-          </p>
-        </div>
+      {/* Blog Search */}
+      
+      <div className='xl:max-w-[1280px] container mx-auto px-4 relative z-20'>
+      <div className="section_header mb-14">
+      <div className="max-w-[750px] mx-auto text-center">
+        <span className="text-[12px] font-semibold text-[#115E59] bg-[#CCFBF1] rounded-full py-1 px-3 mb-6 inline-block">
+          Our Blog
+        </span>
+        <h1 className="md:text-[38px] text-[30px] lg:text-[48px] font-semibold leading-tight mb-3">
+          Explore our insights and case studies
+        </h1>
+        <p className="text-[14px] text-[#6b7280]">
+          Unlock the full potential of your platform with our step-by-step guides and expert advice. 
+          Learn how to manage admin roles, customize branding, configure fees, set up push notifications, live chat, and more.
+        </p>
       </div>
+    </div>
 
       <div className="grid grid-cols-12 gap-5 pb-8">
         <div className="col-span-12 lg:col-span-9 lg:border-r border-[#E5E7EB] lg:pr-4">
@@ -69,7 +62,7 @@ const Blog = () => {
             <BlogSearch />
           </div>
 
-          <div className="grid grid-cols-1 pl-20 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             {filteredPosts.length > 0 ? (
               filteredPosts.map((post) => (
                 <div
@@ -150,6 +143,7 @@ const Blog = () => {
               </span>
             </a>
           </div>
+        </div>
         </div>
     </section>
   );

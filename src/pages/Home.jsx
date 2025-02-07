@@ -12,6 +12,7 @@ import Section6 from './section6';
 import Ection3 from './Ection3';
 import { products } from '../Js/PPP';
 import google from '../assets/Google_Icons.webp';
+import Find from './Find';
 
 
 
@@ -89,6 +90,7 @@ const Home = () => {
         products={products} 
       />
     </div>
+      <Find />
       <Section4 />
       <Section5 />
       <Section6 />

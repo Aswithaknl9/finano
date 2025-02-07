@@ -28,7 +28,7 @@ const profitMethods = [
   },
 ];
 
-const EWalletProfit = () => {
+const RevenueStrategies7 = () => {
   return (
     <section className="pt-[130px]">
       <div className="xl:max-w-[1280px] container mx-auto px-4">
@@ -65,4 +65,4 @@ const EWalletProfit = () => {
   );
 };
 
-export default EWalletProfit;
+export default RevenueStrategies7;

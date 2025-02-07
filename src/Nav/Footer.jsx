@@ -2,7 +2,6 @@ import React from 'react';
 import one from '../assets/one.png'; 
 import footerBackground from '../assets/footerBg.png'; 
 import Icon from './icon';
-import PaymentLogo from './PaymentLogo';
 import SubscribeSection from './SubcribeSection';
 
 const Footer = () => {
@@ -108,19 +107,58 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="py-4 mt-12 border-t border-gray-300">
-        <div className="flex justify-center items-center space-x-4">
-          <p className="text-sm">&copy; 2021-2025 AppDevs Software LTD. All rights reserved worldwide.</p>
-          <div className="text-sm space-x-4 flex">
-            <a href="/privacy-policy" className="mr-4">Privacy Policy</a>
-            <a href="/terms" className="mr-4">Terms Of Conditions</a>
-            <a href="/installation-policy" className="mr-4">Installation Policy</a>
-          </div>
-          <PaymentLogo />
+      <div class="lg:flex items-center justify-between border-t border-gray-200 mt-10 pt-10 text-center lg:text-left">
+  
+  
+        <div class="lg:flex items-center gap-3">
+          <span class="text-gray-600 text-sm">© 2021-2025 AppDevs Software LTD. All rights reserved worldwide.</span>
+          
+          <ul class="flex flex-wrap items-center gap-3 lg:mt-0 mt-5 justify-center lg:justify-start">
+            <li>
+              <a class="border-l border-gray-300 lg:ps-3 text-gray-600 text-sm transition hover:text-blue-600 hover:underline" 
+                href="/privacy-policy">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="border-l border-gray-300 lg:ps-3 text-gray-600 text-sm transition hover:text-blue-600 hover:underline" 
+                href="/terms-of-conditions">Terms Of Conditions</a>
+            </li>
+            <li>
+              <a class="border-l border-gray-300 lg:ps-3 text-gray-600 text-sm transition hover:text-blue-600 hover:underline" 
+                href="/installation-policy">Installation Policy</a>
+            </li>
+          </ul>
         </div>
-       
+
+        <div class="flex items-center gap-4 lg:mt-0 mt-5 justify-center">
+          <a class="transition hover:opacity-70" href="#">
+            <img 
+              alt="GDPR" 
+              loading="lazy" 
+              class="w-14 md:w-16" 
+              src="https://appdevs.net/_next/static/media/gdpr.acfc3409.png"
+            />
+          </a>
+          <a class="transition hover:opacity-70" href="#">
+            <img 
+              alt="Success Payment" 
+              loading="lazy" 
+              class="w-16 md:w-20" 
+              src="https://appdevs.net/_next/static/media/successPayment.888b314c.png"
+            />
+          </a>
+          <a class="transition hover:opacity-70" href="#">
+            <img 
+              alt="Stripe" 
+              loading="lazy" 
+              class="w-14 md:w-16" 
+              src="https://appdevs.net/_next/static/media/stripe.25e087c4.png"
+            />
+          </a>
+        </div>
+  
       </div>
-    </div>
+      </div>
+    
     </>
   );
 };

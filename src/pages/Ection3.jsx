@@ -2,6 +2,7 @@ import React from 'react';
 import Ee from './ee';
 
 
+
 const Ection3 = ({ title, subtitle, products }) => {
   return (
     <section className=" bg-[#f3f4f6] pt-[130px]">
@@ -47,8 +48,8 @@ const Ection3 = ({ title, subtitle, products }) => {
                   )}
                 </div>
                 <a
-                  className="md:text-heading__five xl:font-extrabold md:font-bold font-semibold text-color__heading transition-all hover:text-color__paragraph mb-4"
-                  href={product.link}
+                  className="md:text-heading__five xl:font-semibold md:font-semibold font-semibold text-[16px] md:text-[18px] lg:text-[18px] transition-all hover:text-color__paragraph mb-4"
+                  href={product.previewLink}
                 >
                   {product.title}
                 </a>
@@ -145,6 +146,8 @@ const Ection3 = ({ title, subtitle, products }) => {
   </a>
 </div>
 <Ee />
+
+
 
     </section>
   );
