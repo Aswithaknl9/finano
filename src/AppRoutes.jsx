@@ -39,6 +39,8 @@ import Customization from "./Helpdropdownlist/Customization";
 import Consultation from "./Helpdropdownlist/Consultation";
 import ProductKeyForm from "./Helpdropdownlist/ProductKeyForm";
 import ContactSection from "./pages/ContactSection";
+import Login from "./pages/Login";
+import RefundPolicy from "./pages/RefundPolicy";
 
 const AppRoutes = () => {
   return (
@@ -88,6 +90,10 @@ const AppRoutes = () => {
       <Route path="/consultation" element={<Consultation />} />
       <Route path="/generate-product-key" element={<ProductKeyForm />} />
       <Route path="/contact" element={<ContactSection />} />
+
+      {/* Login */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/refund-policy" element={<RefundPolicy />} />
     </Routes>
     
   );

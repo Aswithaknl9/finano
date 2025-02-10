@@ -3,111 +3,188 @@ import one from '../assets/one.png';
 import footerBackground from '../assets/footerBg.png'; 
 import Icon from './icon';
 import SubscribeSection from './SubcribeSection';
+import qrpayIcon from '../assets/qrpay1.png';
+import adChangeIcon from '../assets/adChange.png';
+import StripCardIcon from '../assets/stripCard1.png';
+import CryInvestIcon from '../assets/crypinvest1.png';
+import xRemitIcon from '../assets/xRemitPro.png';
+import AdFundIcon from '../assets/AdFund.png';
+import EscrocIcon from '../assets/Escroc.png';
+import AdcryptoIcon from '../assets/Adcrypto.png';
+import ADoctorIcon from '../assets/ADoctor.png';
+import eSalonIcon from '../assets/eSalon.png';
+
+
+
+
 
 const Footer = () => {
   return (
     <>
-    <SubscribeSection />
-    <div
-      className="bg-cover bg-center  text-black py-12 px-10 "
-      style={{
-        backgroundImage: `
-          linear-gradient(110deg, rgba(183, 203, 255, 0.34), rgba(255, 249, 242, 0.4) 50%, rgba(183, 203, 255, 0.48)),
-          url(${footerBackground})
-        `}}
-    >
-      <div className="container mx-auto grid grid-cols-1 pt-40 sm:grid-cols-2 lg:grid-cols-5 gap-12">
-        <div>
-          <div className="flex items-center space-x-3 mb-6 mt">
-            <img src={one} alt="Site Logo" className="w-20" />
-          </div>
-          <div className="text-sm space-y-3">
-            <p>Our Locations</p>
-            <div className='text-[#6B7280]'>
-              <p>71-75 Shelton Street, Covent Garden London - WC2H 9JQ</p>
-              <p>London, United Kingdom</p>
+      <SubscribeSection />
+      <div
+        className="bg-cover bg-center text-black py-12 px-10"
+        style={{
+          backgroundImage: `
+            linear-gradient(110deg, rgba(183, 203, 255, 0.34), rgba(255, 249, 242, 0.4) 50%, rgba(183, 203, 255, 0.48)),
+            url(${footerBackground})
+          `,
+        }}
+      >
+        <div className="container mx-auto grid grid-cols-1 pt-40 sm:grid-cols-2 lg:grid-cols-5 gap-12">
+          {/* Company Info */}
+          <div>
+            <div className="flex items-center space-x-3 mb-6 mt">
+              <img src={one} alt="Site Logo" className="w-20" />
             </div>
-            <div className='text-[#6B7280]'>
-              <p>F # F1 (5th Floor), H # 1188, Avenue # 11, Mirpur DOHS</p>
-              <p>Dhaka, Bangladesh</p>
+            <div className="text-sm space-y-3">
+              <p>Our Locations</p>
+              <div className="text-[#6B7280]">
+                <p>71-75 Shelton Street, Covent Garden London - WC2H 9JQ</p>
+                <p>London, United Kingdom</p>
+              </div>
+              <div className="text-[#6B7280]">
+                <p>F # F1 (5th Floor), H # 1188, Avenue # 11, Mirpur DOHS</p>
+                <p>Dhaka, Bangladesh</p>
+              </div>
             </div>
+            <Icon />
           </div>
-          <Icon />
+
+          {/* Company Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Company</h4>
+            <ul className="text-sm space-y-3 text-[#6B7280]">
+              <li><a href="/">Home</a></li>
+              <li><a href="/solutions">Solutions</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/generate-product-key">Product Key</a></li>
+              <li><a href="/documentation">Documentation</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/faq">FAQs</a></li>
+              <li><a href="/consultation">Free Consultation</a></li>
+              <li><a href="/sales-support">Sales Support</a></li>
+              <li><a href="/technical-support">Technical Support</a></li>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/refund-policy">Refund Policy</a></li>
+            </ul>
+          </div>
+
+          {/* Services Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <ul className="text-sm space-y-3 text-[#6B7280]">
+              <li><a href="/services/installation-service">Installation & Deployment</a></li>
+              <li><a href="/services/fintech-software-development">Custom FinTech Development</a></li>
+              <li><a href="/services/mobile-application-development">Mobile App Development</a></li>
+              <li><a href="/services/web-development">Web Development</a></li>
+              <li><a href="/services/ui-ux-design">UI/UX Design</a></li>
+              <li><a href="/services/quality-assurance-testing">Quality Assurance Testing</a></li>
+              <li><a href="/services/cloud-services">Cloud Services</a></li>
+              <li><a href="/services/devops-services">DevOps Services</a></li>
+              <li><a href="/services/maintenance-and-support">Maintenance and Support</a></li>
+            </ul>
+          </div>
+
+          {/* Solutions Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Solutions</h4>
+            <ul className="text-sm space-y-3 text-[#6B7280]">
+              <li><a href="/solutions/mobile-banking-solutions">Mobile Banking</a></li>
+              <li><a href="/solutions/remittance-solution">Remittance</a></li>
+              <li><a href="/solutions/digital-wallet-solutions">E-Wallet</a></li>
+              <li><a href="/solutions/white-label-payment-gateway-solutions">Payment Gateway</a></li>
+              <li><a href="/solutions/currency-exchange-solutions">Currency Exchange</a></li>
+              <li><a href="/solutions/card-issuing-solutions">Card Issuing</a></li>
+              <li><a href="/solutions/crowdfunding-solutions">Crowdfunding</a></li>
+              <li><a href="/solutions/investment-management-solutions">Investment</a></li>
+              <li><a href="/solutions/escrow-solutions">Escrow</a></li>
+              <li><a href="/solutions/ai-chatbot-solutions">AI Chatbot</a></li>
+              <li><a href="/solutions/online-booking-solutions">Booking</a></li>
+              <li><a href="/solutions/multi-vendor-solutions">Multi-vendor</a></li>
+            </ul>
+          </div>
+
+          {/* Products Section (Fixed `QRPay` List Item) */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Products</h4>
+            <ul className="text-sm space-y-3 text-[#6B7280]">
+              <li>
+                <a href="/qrpay" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={qrpayIcon} />
+                  </div>
+                  <span>QRPay</span>
+                </a>
+              </li>
+              <li><a href="/adchange" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={adChangeIcon} />
+                  </div>
+                  <span>adChange</span>
+                </a></li>
+              <li><a href="/StripCard" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={StripCardIcon} />
+                  </div>
+                  <span>StripCard</span>
+                </a></li>
+              <li>
+              <a href="/crypinvest" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={CryInvestIcon} />
+                  </div>
+                  <span>CryInvest</span>
+                </a></li>
+              <li>
+              <a href="/xRemit" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={xRemitIcon} />
+                  </div>
+                  <span>xRemit</span>
+                </a></li>
+                
+              <li>
+              <a href="/AdFund" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={AdFundIcon} />
+                  </div>
+                  <span>AdFund</span>
+                </a></li>
+              <li>
+              <a href="/Escroc" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={EscrocIcon} />
+                  </div>
+                  <span>Escroc</span>
+                </a></li>
+              <li>
+              <a href="/AdCrypto" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={AdcryptoIcon} />
+                  </div>
+                  <span>AdCrypto</span>
+                </a></li>
+              <li>
+              <a href="/ADoctor" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={ADoctorIcon} />
+                  </div>
+                  <span>ADoctor</span>
+                </a></li>
+              <li>
+              <a href="/eSalon" className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                    <img alt="QRPay" loading="lazy" width="21" height="21" className="object-cover" src={eSalonIcon} />
+                  </div>
+                  <span>eSalon</span>
+                </a></li>
+            </ul>
+          </div>
         </div>
 
-        
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Company</h4>
-          <ul className="text-sm space-y-3 text-[#6B7280]">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/solutions">Solutions</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/product-key">Product Key</a></li>
-            <li><a href="/documentation">Documentation</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/faqs">FAQs</a></li>
-            <li><a href="/free-consultation">Free Consultation</a></li>
-            <li><a href="/sales-support">Sales Support</a></li>
-            <li><a href="/technical-support">Technical Support</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/refund-policy">Refund Policy</a></li>
-          </ul>
-        </div>
-
-        
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Services</h4>
-          <ul className="text-sm space-y-3 text-[#6B7280]">
-            <li><a href="/installation-deployment">Installation & Deployment</a></li>
-            <li><a href="/custom-fintech-development">Custom FinTech Development</a></li>
-            <li><a href="/mobile-app-development">Mobile App Development</a></li>
-            <li><a href="/web-development">Web Development</a></li>
-            <li><a href="/ui-ux-design">UI/UX Design</a></li>
-            <li><a href="/quality-assurance-testing">Quality Assurance Testing</a></li>
-            <li><a href="/cloud-services">Cloud Services</a></li>
-            <li><a href="/devops-services">DevOps Services</a></li>
-            <li><a href="/maintenance-support">Maintenance and Support</a></li>
-          </ul>
-        </div>
-
-        
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Solutions</h4>
-          <ul className="text-sm space-y-3 text-[#6B7280]">
-            <li><a href="/mobile-banking">Mobile Banking</a></li>
-            <li><a href="/remittance">Remittance</a></li>
-            <li><a href="/e-wallet">E-Wallet</a></li>
-            <li><a href="/payment-gateway">Payment Gateway</a></li>
-            <li><a href="/currency-exchange">Currency Exchange</a></li>
-            <li><a href="/card-issuing">Card Issuing</a></li>
-            <li><a href="/crowdfunding">Crowdfunding</a></li>
-            <li><a href="/investment">Investment</a></li>
-            <li><a href="/escrow">Escrow</a></li>
-            <li><a href="/ai-chatbot">AI Chatbot</a></li>
-            <li><a href="/booking">Booking</a></li>
-            <li><a href="/multi-vendor">Multi-vendor</a></li>
-          </ul>
-        </div>
-
-       
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Products</h4>
-          <ul className="text-sm space-y-3 text-[#6B7280]">
-            <li><a href="/qrpay">QRPay</a></li>
-            <li><a href="/adchange">adChange</a></li>
-            <li><a href="/stripcard">StripCard</a></li>
-            <li><a href="/crypinvest">CrypInvest</a></li>
-            <li><a href="/xremit">xRemit</a></li>
-            <li><a href="/adfund">AdFund</a></li>
-            <li><a href="/escroc">Escroc</a></li>
-            <li><a href="/adcrypto">AdCrypto</a></li>
-            <li><a href="/adoctor">ADoctor</a></li>
-            <li><a href="/esalon">eSalon</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="lg:flex items-center justify-between border-t border-gray-200 mt-10 pt-10 text-center lg:text-left">
+        {/* Footer Bottom */}
+        <div class="lg:flex items-center justify-between border-t border-gray-200 mt-10 pt-10 text-center lg:text-left">
   
   
         <div class="lg:flex items-center gap-3">
@@ -157,6 +234,7 @@ const Footer = () => {
         </div>
   
       </div>
+
       </div>
     
     </>

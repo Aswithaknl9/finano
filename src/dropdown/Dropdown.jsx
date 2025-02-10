@@ -44,32 +44,32 @@ const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
       {/* Dropdown Menu */}
       {isOpen && (
         <div
-          className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg z-50 w-[380px] sm:w-[500px] md:w-[650px] lg:w-[800px] xl:w-[900px] p-5 flex space-x-4"
+          className="absolute left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-lg w-[800px] p-6 z-50"
         >
           {/* Left Side: Grid Layout */}
-          <div className="w-full pr-4">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="w-full">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {links.map((item, index) => (
                 <li key={index} className="hover:bg-gray-100 p-3 rounded-md transition-all">
                   <NavLink className="flex items-start space-x-4" to={item.path}>
                     {/* Icon with Background */}
                     <div
-                      className="w-10 lg:w-12 h-10 lg:h-12 flex justify-center items-center lg:rounded-md p-2 rounded-full"
-                      style={{ backgroundColor: item.bgColor }} // Applied background color correctly
+                      className="w-12 h-12 flex justify-center items-center rounded-md p-2"
+                      style={{ backgroundColor: item.bgColor }}
                     >
                       <img
                         alt={item.label}
                         loading="lazy"
                         width="30"
                         height="30"
-                        className="lg:h-5 h-4 w-auto"
+                        className="h-6 w-auto"
                         src={item.imgSrc}
                       />
                     </div>
                     {/* Text Content */}
                     <div className="w-60">
                       <h4 className="font-semibold text-black text-lg">{item.label}</h4>
-                      <p className="text-sm text-gray-500 hidden sm:block md:block">{item.description}</p>
+                      <p className="text-sm text-gray-500 hidden sm:block">{item.description}</p>
                     </div>
                   </NavLink>
                 </li>
@@ -77,13 +77,11 @@ const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
             </ul>
           </div>
 
-          {/* Right Side Background Image - Commented Out */}
-          {/*
+          {/* Right Side Background Image */}
           <div
-            className="w-1/3 bg-cover bg-no-repeat rounded-r-lg"
-            style={{ backgroundImage: `url(${backgroundImage})`, backgroundPosition: "center" }}
+            className="mt-4 w-full h-40 bg-cover bg-center rounded-md"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
           />
-          */}
         </div>
       )}
     </li>
