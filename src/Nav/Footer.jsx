@@ -13,7 +13,9 @@ import EscrocIcon from '../assets/Escroc.png';
 import AdcryptoIcon from '../assets/Adcrypto.png';
 import ADoctorIcon from '../assets/ADoctor.png';
 import eSalonIcon from '../assets/eSalon.png';
-
+import gdpr from '../assets/gdpr.png';
+import successPayment from '../assets/successPayment.png';
+import stripe from '../assets/stripe.png';
 
 
 
@@ -38,7 +40,7 @@ const Footer = () => {
               <img src={one} alt="Site Logo" className="w-20" />
             </div>
             <div className="text-sm space-y-3">
-              <p>Our Locations</p>
+              <p className='font-semibold text-[20px]'>Our Locations</p>
               <div className="text-[#6B7280]">
                 <p>71-75 Shelton Street, Covent Garden London - WC2H 9JQ</p>
                 <p>London, United Kingdom</p>
@@ -54,7 +56,7 @@ const Footer = () => {
           {/* Company Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="text-sm space-y-3 text-[#6B7280]">
+            <ul className="text-sm  space-y-3 text-[#6B7280]">
               <li><a href="/">Home</a></li>
               <li><a href="/solutions">Solutions</a></li>
               <li><a href="/services">Services</a></li>
@@ -188,19 +190,19 @@ const Footer = () => {
   
   
         <div class="lg:flex items-center gap-3">
-          <span class="text-gray-600 text-sm">© 2021-2025 AppDevs Software LTD. All rights reserved worldwide.</span>
+          <span class="text-[#6b7280] text-sm">© 2021-2025 AppDevs Software LTD. All rights reserved worldwide.</span>
           
           <ul class="flex flex-wrap items-center gap-3 lg:mt-0 mt-5 justify-center lg:justify-start">
             <li>
-              <a class="border-l border-gray-300 lg:ps-3 text-gray-600 text-sm transition hover:text-blue-600 hover:underline" 
+              <a class="border-l border-gray-300 lg:ps-3 text-[#6b7280] text-sm transition hover:text-blue-600 hover:underline" 
                 href="/privacy-policy">Privacy Policy</a>
             </li>
             <li>
-              <a class="border-l border-gray-300 lg:ps-3 text-gray-600 text-sm transition hover:text-blue-600 hover:underline" 
+              <a class="border-l border-gray-300 lg:ps-3 text-[#6b7280] text-sm transition hover:text-blue-600 hover:underline" 
                 href="/terms-of-conditions">Terms Of Conditions</a>
             </li>
             <li>
-              <a class="border-l border-gray-300 lg:ps-3 text-gray-600 text-sm transition hover:text-blue-600 hover:underline" 
+              <a class="border-l border-gray-300 lg:ps-3 text-[#6b7280] text-sm transition hover:text-blue-600 hover:underline" 
                 href="/installation-policy">Installation Policy</a>
             </li>
           </ul>
@@ -212,7 +214,7 @@ const Footer = () => {
               alt="GDPR" 
               loading="lazy" 
               class="w-14 md:w-16" 
-              src="https://appdevs.net/_next/static/media/gdpr.acfc3409.png"
+              src={gdpr}
             />
           </a>
           <a class="transition hover:opacity-70" href="#">
@@ -220,7 +222,7 @@ const Footer = () => {
               alt="Success Payment" 
               loading="lazy" 
               class="w-16 md:w-20" 
-              src="https://appdevs.net/_next/static/media/successPayment.888b314c.png"
+              src={successPayment}
             />
           </a>
           <a class="transition hover:opacity-70" href="#">
@@ -228,7 +230,7 @@ const Footer = () => {
               alt="Stripe" 
               loading="lazy" 
               class="w-14 md:w-16" 
-              src="https://appdevs.net/_next/static/media/stripe.25e087c4.png"
+              src={stripe}
             />
           </a>
         </div>

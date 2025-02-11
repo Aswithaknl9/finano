@@ -41,6 +41,9 @@ import ProductKeyForm from "./Helpdropdownlist/ProductKeyForm";
 import ContactSection from "./pages/ContactSection";
 import Login from "./pages/Login";
 import RefundPolicy from "./pages/RefundPolicy";
+import PrivacyPolicy from "./Policy/PrivacyPolicy";
+import TermsAndConditions from "./Policy/Terms";
+import InstallationPolicy from "./Policy/Install";
 
 const AppRoutes = () => {
   return (
@@ -94,6 +97,9 @@ const AppRoutes = () => {
       {/* Login */}
       <Route path="/login" element={<Login />} />
       <Route path="/refund-policy" element={<RefundPolicy />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-conditions" element={<TermsAndConditions />} />
+      <Route path="/installation-policy" element={<InstallationPolicy />} />
     </Routes>
     
   );

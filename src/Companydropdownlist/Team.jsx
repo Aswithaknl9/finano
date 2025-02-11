@@ -1,6 +1,8 @@
 import React from "react";
 import Startbusiness1111 from "../TeamPages/Startbusiness1111";
 import Questionss from "../TeamPages/Questionss";
+import productPageLeftBg from "../assets/solutionPageBgLeft.webp";
+import productPageRightBg from "../assets/solutionPageBgRight.webp";
 
 const Team = () => {
   const careerImages = [
@@ -29,7 +31,7 @@ const Team = () => {
           height="946"
           decoding="async"
           className="absolute top-0 left-0 z-10 overflow-hidden  2xl:block"
-          src="https://appdevs.net/_next/static/media/productPageLeftBg.321a9e4d.webp"
+          src={productPageLeftBg}
           style={{ color: "transparent" }}
         />
         <img
@@ -39,7 +41,7 @@ const Team = () => {
           height="799"
           decoding="async"
           className="absolute top-[120px] right-0 z-10 overflow-hidden 2xl:block"
-          src="https://appdevs.net/_next/static/media/solutionPageBgRight.e134874f.webp"
+          src={productPageRightBg}
           style={{ color: "transparent" }}
         />
         <div className="xl:max-w-[1280px] container px-4 mx-auto relative z-20">

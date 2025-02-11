@@ -31,7 +31,7 @@ const RefundPolicy = () => {
             <span className="text-[12px] font-semibold text-[#115E59] bg-[#CCFBF1] rounded-full py-1 px-3 mb-6 inline-block">
               Refund Policy
             </span>
-            <h1 className="sm:text-[30] lg:text-[48px] font-semibold">Refund Policy</h1>
+            <h1 className="text-[30px] lg:text-[48px] font-semibold">Refund Policy</h1>
           </div>
         </div>
 

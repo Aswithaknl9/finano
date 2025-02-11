@@ -5,10 +5,10 @@ import { technologies } from '../Js/technologies';
 
 const Section6 = () => {
   return (
-    <section className="relative flex flex-col items-center max-w-[1200px] mx-auto mt-14 py-[8px] ">
+    <section className="relative  pb-[130px] flex flex-col items-center max-w-[1200px] mx-auto mt-14 py-[8px] ">
       {/* Title */}
       <div className="text-center mb-14">
-        <h1 className="text-[32px] sm:text-[40px] font-semibold ">
+        <h1 className="text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] max-w-[587px] mx-auto px-4 text-center  leading-tight font-semibold ">
           Technologies used to develop our products.
         </h1>
       </div>
