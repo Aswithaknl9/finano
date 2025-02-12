@@ -8,6 +8,8 @@ import CrowdFunding from '../assets/crowdFunding.webp';
 import solutionElement from '../assets/solutionElement.webp';
 import sectionBg from '../assets/solutionSectionBg.webp';
 import solutionBg1 from '../assets/solutionBg1.png';
+import Lottie from 'lottie-react';
+import sample from "../assets/sample animation.json";
 
 const solutionsData = [
   {
@@ -91,6 +93,7 @@ const SolutionsSection = () => {
         style={{ color: 'transparent' }}
         src={solutionElement}
       />
+      {/*<Lottie loop={true} animationData={sample} style={{ height: '200px', width: '200px', position: 'absolute', top: '5rem', left: '50%', transform: 'translateX(-50%)', }} /> */}
       <div className="xl:max-w-[1280px] container mx-auto px-4">
         <div className="section_header mb-14">
           <div className="max-w-[730px] mx-auto text-center">

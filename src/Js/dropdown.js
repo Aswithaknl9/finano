@@ -103,48 +103,56 @@ export const dropdown = {
       label: 'Custom FinTech Development',
       imgSrc: 'https://appdevs.net/_next/static/media/fintech.29adde90.webp',
       description: 'Tailored FinTech software to streamline financial operations and innovation.',
+      bgColor:'#a66ce020'
     },
     {
       path: '/services/mobile-application-development',
       label: 'Mobile App Development',
       imgSrc: 'https://appdevs.net/_next/static/media/mobile.27207af2.webp',
       description: 'Advanced mobile solutions crafted for the finance industry.',
+      bgColor:'#e7e1f7'
     },
     {
       path: '/services/web-development',
       label: 'Web Development',
       imgSrc: 'https://appdevs.net/_next/static/media/web.de8238ed.webp',
       description: 'Robust web solutions tailored for FinTech businesses.',
+      bgColor:'#c451ad20'
     },
     {
       path: '/services/ui-ux-design',
       label: 'UI/UX Design',
       imgSrc: 'https://appdevs.net/_next/static/media/uiux.e20625b5.webp',
       description: 'User-focused design for engaging, efficient FinTech applications.',
+      bgColor:'#a66ce020'
     },
     {
       path: '/services/quality-assurance-testing',
       label: 'Quality Assurance Testing',
       imgSrc: 'https://appdevs.net/_next/static/media/quality.c8e11489.webp',
       description: 'Comprehensive testing to ensure high-performance, reliable software.',
+      bgColor:'#d1d9ed'
     },
     {
       path: '/services/cloud-services',
       label: 'Cloud Services',
       imgSrc: 'https://appdevs.net/_next/static/media/quality.c8e11489.webp',
       description: 'Scalable cloud infrastructure for enhanced performance and security.',
+      bgColor:'#cff5ff'
     },
     {
       path: '/services/devops-services',
       label: 'DevOps Services',
       imgSrc: 'https://appdevs.net/_next/static/media/devops.886daf7f.webp',
       description: 'Efficient DevOps solutions for faster, reliable software delivery.',
+      bgColor:'#c451ad20'
     },
     {
       path: '/services/maintenance-and-support',
       label: 'Maintenance and Support',
       imgSrc: 'https://appdevs.net/_next/static/media/maintainence.728d2011.webp',
       description: 'Reliable maintenance to keep FinTech systems running smoothly.',
+      bgColor:'#cff5ff'
     },
 
 
@@ -155,36 +163,42 @@ export const dropdown = {
       label: 'About Us',
       imgSrc: 'https://appdevs.net/_next/static/media/about.ac1b6209.webp',
       description: 'Your Trusted Development Partner',
+      bgColor:'#e8e5ff'
     },
     {
       path: '/our-mission',
       label: 'Our Mission',
       imgSrc: 'https://appdevs.net/_next/static/media/mission.d0b5a26c.webp',
       description: 'Committed to Innovative Solutions',
+      bgColor:'#a66ce020'
     },
     {
       path: '/our-vision',
       label: 'Our Vision',
       imgSrc: 'https://appdevs.net/_next/static/media/vision.1bb9336c.webp',
       description: 'Shaping the Future of Technology',
+      bgColor:'#fff2df'
     },
     {
       path: '/join-our-team',
       label: 'Join Our Team',
       imgSrc: 'https://appdevs.net/_next/static/media/career.9daafed8.webp',
       description: 'Careers at AppDevs',
+      bgColor:'#dee5f9'
     },
     {
       path: '/life-at-appdevs',
       label: 'Life at AppDevs',
       imgSrc: 'https://appdevs.net/_next/static/media/career.9daafed8.webp',
       description: 'Discover Our Company Culture',
+      bgColor:'#ffedda'
     },
     {
       path: '/faq',
       label: 'FAQ',
       imgSrc: 'https://appdevs.net/_next/static/media/faqs.c775d05a.webp',
       description: 'Get Answers to Your Questions About AppDevs',
+      bgColor:'#dcf9fd'
     },
   ],
   help: [
@@ -193,36 +207,42 @@ export const dropdown = {
       label: 'Documentation',
       imgSrc: 'https://appdevs.net/_next/static/media/documentation.ebb8fcb6.webp',
       description: 'Access comprehensive guides and resources for seamless product usage.',
+      bgColor:'#e8f2ff'
     },
     {
       path: '/sales-support',
       label: 'Sales Support',
       imgSrc: 'https://appdevs.net/_next/static/media/sales.c887570a.webp',
       description: 'Connect with sales for purchase inquiries and product details.',
+      bgColor:'#a66ce020'
     },
     {
       path: '/technical-support',
       label: 'Technical Support',
       imgSrc: 'https://appdevs.net/_next/static/media/support.a6cb96db.webp',
       description: 'Get help with technical issues and troubleshooting guidance.',
+      bgColor:'#c451ad20'
     },
     {
       path: '/customization',
       label: 'Get Customization',
       imgSrc: 'https://appdevs.net/_next/static/media/customization.3b95b58e.webp',
       description: 'Request tailored solutions to fit your unique business needs.',
+      bgColor:'#e6ecfd'
     },
     {
       path: '/consultation',
       label: 'Talk to Expert',
       imgSrc: 'https://appdevs.net/_next/static/media/expert.18c17e9d.webp',
       description: 'Schedule a consultation with our experts for in-depth assistance.',
+      bgColor:'#ece7ff'
     },
     {
       path: '/generate-product-key',
       label: 'Generate Product Key',
       imgSrc: 'https://appdevs.net/_next/static/media/key.9bf65369.webp',
       description: 'A product key is essential to activate and install your application.',
+      bgColor:'#e5ecf9'
     },
 
 
