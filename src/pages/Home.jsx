@@ -33,7 +33,7 @@ const Home = () => {
           </div>
 
           {/* Right Jumping Icon - Hidden on Mobile */}
-          <div className="hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
+          <div className="hidden sm:block absolute right-0  top-1/2 transform -translate-y-1/2 z-10">
             <JumpingIcons1 />
           </div>
 
