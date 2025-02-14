@@ -11,7 +11,7 @@ const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
   const isCompany = title.toLowerCase() === "company";
   const isHelp = title.toLowerCase() === "help";
 
-  const backgroundImage = isSolutions
+  {/*const backgroundImage = isSolutions
     ? solutionff
     : isServices
     ? service
@@ -20,6 +20,7 @@ const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
     : isHelp
     ? help
     : "";
+    */}
 
   return (
     <li
@@ -77,11 +78,13 @@ const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
             </ul>
           </div>
 
-          {/* Right Side Background Image */}
+          {/* Right Side Background Image 
           <div
             className="w-[200px] h-[150px] bg-cover bg-center rounded-md"
             style={{ backgroundImage: `url(${backgroundImage})` }}
           />
+
+          */}
         </div>
       )}
     </li>

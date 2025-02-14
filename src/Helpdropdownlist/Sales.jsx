@@ -44,8 +44,9 @@ const Sales = () => {
 
           </div>
         </div>
+        <ContactOptions />
       </div>
-      <ContactOptions />
+      
     </section>
   );
 };

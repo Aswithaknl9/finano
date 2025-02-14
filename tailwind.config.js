@@ -10,6 +10,7 @@ export default {
         "loop-scroll": "loop-scroll 20s linear infinite",
         "jump-in": "jump-in 0.6s ease-in-out forwards",
         "zoom-in-out": "zoom-in-out 5s ease infinite",
+       
       },
       keyframes: {
         "loop-scroll": {
@@ -26,6 +27,7 @@ export default {
           "50%": { transform: "scale(1.2)" },
           "100%": { transform: "scale(1)" },
         },
+
       },
       colors: {
         customBlue: '#2974E7', 
