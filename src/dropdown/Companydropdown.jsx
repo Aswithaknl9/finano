@@ -1,23 +1,23 @@
 import React from 'react';
-import { solutionsdropdown } from '../Js/dropdown1';
+import { companydropdown } from '../Js/dropdown1';
 
-const SolutionsDropdown = ({ isOpen }) => {
+const CompanyDropdown = ({ isOpen }) => {
   return (
     <div 
-      className={`absolute top-[88%] lg:left-[250%] left-[50%] w-[90%] md:w-[1200px] bg-white shadow-md rounded-[15px] transform -translate-x-1/2 flex flex-col md:flex-row z-10 overflow-hidden transition-opacity duration-500 ease-in-out ${
+      className={`absolute top-[88%] left-[50%] w-[90%] md:w-[800px] bg-white shadow-md rounded-[15px] transform -translate-x-1/2 flex flex-col md:flex-row z-10 overflow-hidden transition-opacity duration-500 ease-in-out ${
         isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
     >
-      {/* Left: Solutions List */}
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-3/4 p-4">
-        {solutionsdropdown.map((item, index) => (
-          <li key={index} className="flex flex-row items-center gap-3 p-3 transition-all duration-300">
+      {/* Left: Company List */}
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-2/3 gap-2 p-3">
+        {companydropdown.map((item, index) => (
+          <li key={index} className="flex flex-row items-center gap-2 p-2 transition-all duration-300">
             {/* Image */}
             <div className="w-10 h-10 flex items-center justify-center rounded-md" style={{ backgroundColor: item.bgColor }}>
               <img src={item.imgSrc} alt={item.label} className="w-6 h-6 rounded-md" />
             </div>
 
-            {/* Label & Description */}
+            {/* Label (Only label on mobile, full details on larger screens) */}
             <div>
               <a href={item.path} className="text-gray-700 text-sm font-semibold">
                 {item.label}
@@ -29,10 +29,10 @@ const SolutionsDropdown = ({ isOpen }) => {
       </ul>
 
       {/* Right: Image Section (Hidden on mobile) */}
-      <div className="hidden md:flex w-1/4 justify-end ">
+      <div className="hidden md:flex w-1/3 justify-end">
         <img 
-          src="https://appdevs.net/_next/static/media/solution.f7885da2.webp" 
-          alt="Solutions" 
+          src="https://appdevs.net/_next/static/media/company.c78efb6d.webp"
+          alt="Company" 
           className="max-w-full h-auto rounded-md"
         />
       </div>
@@ -40,4 +40,4 @@ const SolutionsDropdown = ({ isOpen }) => {
   );
 };
 
-export default SolutionsDropdown;
+export default CompanyDropdown;

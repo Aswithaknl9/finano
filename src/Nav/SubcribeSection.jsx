@@ -1,4 +1,5 @@
 import React from 'react';
+import newsletterBg from '../assets/newsletterBg.webp';
 
 const SubscribeSection = () => {
   return (
@@ -12,7 +13,7 @@ const SubscribeSection = () => {
             height="300"
             decoding="async"
             className="w-full h-auto absolute bottom-0 left-0 rounded-b-[40px]"
-            src="https://appdevs.net/_next/static/media/newsletterBg.e6eafcd3.webp"
+            src={newsletterBg}
           />
           <img
             alt="Avatar Element"

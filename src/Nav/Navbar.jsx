@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import one from '../assets/one.png';
-import Dropdown from '../dropdown/Dropdown';
-import { dropdown } from '../Js/dropdown';
+import SolutionsDropdown from '../dropdown/Solutiondropdown';
+import ServicesDropdown from '../dropdown/Servicesdropdown';
+import CompanyDropdown from '../dropdown/Companydropdown';
+import HelpDropdown from '../dropdown/Helpdropdown';
 
 
 
@@ -46,22 +48,42 @@ const Navbar = () => {
             </li>
 
             {/* Solutions Dropdown */}
-            <Dropdown
-              title="Solutions"
-              links={dropdown.solutions}
-              isOpen={openDropdown === 'solutions'}
+            <li 
+              className="relative lg:py-8 lg:px-0 px-6 py-2 flex items-center"
               onMouseEnter={() => handleMouseEnter('solutions')}
               onMouseLeave={handleMouseLeave}
-            />
+            >
+              <NavLink to="/solutions" className={({ isActive }) => (isActive ? 'text-blue-700 flex items-center' : 'text-black flex items-center')} >
+                Solutions
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'solutions' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </NavLink>
+              {openDropdown === 'solutions' && <SolutionsDropdown isOpen={openDropdown === 'solutions'} />}
+            </li>
+
+
+
 
             {/* Services Dropdown */}
-            <Dropdown
-              title="Services"
-              links={dropdown.services}
-              isOpen={openDropdown === 'services'}
+            <li 
+              className="relative lg:py-8 lg:px-0 px-6 py-2 flex items-center"
               onMouseEnter={() => handleMouseEnter('services')}
               onMouseLeave={handleMouseLeave}
-            />
+            >
+              <NavLink to="/services" className={({ isActive }) => (isActive ? 'text-blue-700 flex items-center' : 'text-black flex items-center')}>
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'services' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </NavLink>
+              {openDropdown === 'services' && <ServicesDropdown isOpen={openDropdown === 'services'} />}
+            </li>
+
 
             <li className="lg:py-8 lg:px-0 px-6 py-2">
               <NavLink to="/products" className={({ isActive }) => (isActive ? 'text-blue-700' : 'text-black')}>Products</NavLink>
@@ -72,22 +94,41 @@ const Navbar = () => {
             </li>
 
             {/* Company Dropdown */}
-            <Dropdown
-              title="Company"
-              links={dropdown.company}
-              isOpen={openDropdown === 'company'}
+            <li 
+              className="relative lg:py-8 lg:px-0 px-6 py-2 flex items-center"
               onMouseEnter={() => handleMouseEnter('company')}
               onMouseLeave={handleMouseLeave}
-            />
+            >
+              <span className="cursor-pointer text-black flex items-center">
+                Company
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'company' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </span>
+              {openDropdown === 'company' && <CompanyDropdown isOpen={openDropdown === 'company'} />}
+            </li>
+
 
             {/* Help Dropdown */}
-            <Dropdown
-              title="Help"
-              links={dropdown.help}
-              isOpen={openDropdown === 'help'}
+            <li 
+              className="relative lg:py-8 lg:px-0 px-6 py-2 flex items-center"
               onMouseEnter={() => handleMouseEnter('help')}
               onMouseLeave={handleMouseLeave}
-            />
+            >
+              <span className="cursor-pointer text-black flex items-center">
+                Help
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'help' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </span>
+              {openDropdown === 'help' && <HelpDropdown isOpen={openDropdown === 'help'} />}
+            </li>
+
+
           </ul>
         </div>
 
@@ -135,24 +176,39 @@ const Navbar = () => {
               <li>
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'text-blue-700' : 'text-black')}>Home</NavLink>
               </li>
+              
+              <li 
+              className="relative flex items-center"
+              onMouseEnter={() => handleMouseEnter('solutions')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <NavLink to="/solutions" className={({ isActive }) => (isActive ? 'text-blue-700 flex items-center' : 'text-black flex items-center')} >
+                Solutions
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'solutions' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </NavLink>
+              {openDropdown === 'solutions' && <SolutionsDropdown isOpen={openDropdown === 'solutions'} />}
+            </li>
 
-              {/* Solutions Dropdown for Mobile */}
-              <Dropdown
-                title="Solutions"
-                links={dropdown.solutions}
-                isOpen={openDropdown === 'solutions'}
-                onMouseEnter={() => handleMouseEnter('solutions')}
-                onMouseLeave={handleMouseLeave}
-              />
 
-              {/* Services Dropdown for Mobile */}
-              <Dropdown
-                title="Services"
-                links={dropdown.services}
-                isOpen={openDropdown === 'services'}
-                onMouseEnter={() => handleMouseEnter('services')}
-                onMouseLeave={handleMouseLeave}
-              />
+              <li 
+              className="relative flex items-center"
+              onMouseEnter={() => handleMouseEnter('services')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <NavLink to="/services" className={({ isActive }) => (isActive ? 'text-blue-700 flex items-center' : 'text-black flex items-center')}>
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'services' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </NavLink>
+              {openDropdown === 'services' && <ServicesDropdown isOpen={openDropdown === 'services'} />}
+            </li>
 
               <li>
                 <NavLink to="/products" className={({ isActive }) => (isActive ? 'text-blue-700' : 'text-black')}>Products</NavLink>
@@ -161,24 +217,39 @@ const Navbar = () => {
               <li>
                 <NavLink to="/blog" className={({ isActive }) => (isActive ? 'text-blue-700' : 'text-black')}>Blog</NavLink>
               </li>
-
-              <Dropdown
-              title="Company"
-              links={dropdown.company}
-              isOpen={openDropdown === 'company'}
+              <li 
+              className="relative flex items-center"
               onMouseEnter={() => handleMouseEnter('company')}
               onMouseLeave={handleMouseLeave}
-            />
+            >
+              <span className="cursor-pointer text-black flex items-center">
+                Company
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'company' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </span>
+              {openDropdown === 'company' && <CompanyDropdown isOpen={openDropdown === 'company'} />}
+            </li>
+              
+            <li 
+              className="relative flex items-center"
+              onMouseEnter={() => handleMouseEnter('help')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <span className="cursor-pointer text-black flex items-center">
+                Help
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-4 text-color__heading ms-1 relative top-[1px] transition-transform duration-200 ${
+                  openDropdown === 'help' ? 'rotate-180' : 'rotate-0'
+                }`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </span>
+              {openDropdown === 'help' && <HelpDropdown isOpen={openDropdown === 'help'} />}
+            </li>
 
-              <Dropdown
-                title="Help"
-                links={dropdown.help}
-                isOpen={openDropdown === 'help'}
-                onMouseEnter={() => handleMouseEnter('help')}
-                onMouseLeave={handleMouseLeave}
-              />
-              
-              
+        
             </ul>
           </div>
         )}

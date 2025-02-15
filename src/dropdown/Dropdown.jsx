@@ -45,10 +45,10 @@ const Dropdown = ({ title, links, isOpen, onMouseEnter, onMouseLeave }) => {
       {/* Dropdown Menu */}
       {isOpen && (
         <div
-          className="absolute left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-lg w-[800px] p-6 z-50 flex items-start space-x-6"
+          className="absolute  left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-lg w-[800px] p-6 z-50 flex items-start space-x-6"
         >
           {/* Left Side: Grid Layout */}
-          <div className="flex-1">
+          <div className="flex-1 ">
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {links.map((item, index) => (
                 <li key={index} className="hover:bg-gray-100 p-3 rounded-md transition-all">

@@ -1,6 +1,4 @@
-
-export const dropdown = {
-  solutions: [
+export const  solutionsdropdown = [
     {
       path: '/solutions/mobile-banking-solutions',
       label: 'Mobile Banking Solutions',
@@ -64,7 +62,7 @@ export const dropdown = {
       description: 'Secure transactions with trusted escrow services for peace of mind.',
       bgColor:'#e1eaff'
     },
-
+  
     {
       path: '/solutions/ai-chatbot-solutions',
       label: 'AI Chatbot Solutions',
@@ -72,7 +70,7 @@ export const dropdown = {
       description: 'Intelligent chatbot solutions for enhanced customer service and engagement.',
       bgColor:'#dee9ff'
     },
-
+  
     {
       path: '/solutions/online-booking-solutions',
       label: 'Online Booking Solutions',
@@ -80,7 +78,7 @@ export const dropdown = {
       description: 'Streamlined booking system for appointments and reservations.',
       bgColor:'#2a2a2a29'
     },
-
+  
     {
       path: '/solutions/multi-vendor-solutions',
       label: 'Multi-Vendor Solutions',
@@ -88,10 +86,8 @@ export const dropdown = {
       description: 'Flexible platform for multiple sellers to showcase and sell products.',
       bgColor:'#c6e9ff'
     },
-
-
-  ],
-  services: [
+  ];
+  export const servicesdropdown = [
     {
       path: '/services/installation-service',
       label: 'Installation & Deployment',
@@ -155,10 +151,8 @@ export const dropdown = {
       description: 'Reliable maintenance to keep FinTech systems running smoothly.',
       bgColor:'#cff5ff'
     },
-
-
-  ],
-  company: [
+  ];
+  export const companydropdown = [
     {
       path: '/about-us',
       label: 'About Us',
@@ -201,8 +195,8 @@ export const dropdown = {
       description: 'Get Answers to Your Questions About AppDevs',
       bgColor:'#dcf9fd'
     },
-  ],
-  help: [
+  ];
+  export const helpdropdown = [
     {
       path: '/documentation',
       label: 'Documentation',
@@ -245,7 +239,6 @@ export const dropdown = {
       description: 'A product key is essential to activate and install your application.',
       bgColor:'#e5ecf9'
     },
-
-
-  ]
-}
+  ];
+  
+  
