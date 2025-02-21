@@ -6,11 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
+      },
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
         "jump-in": "jump-in 0.6s ease-in-out forwards",
         "zoom-in-out": "zoom-in-out 5s ease infinite",
-       
+        'fade-right': 'fadeRight 700ms ease-out',
+        "fade-up": "fadeUp 0.8s ease-out forwards",
       },
       keyframes: {
         "loop-scroll": {
@@ -26,6 +30,14 @@ export default {
           "0%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.2)" },
           "100%": { transform: "scale(1)" },
+        },
+        "fadeRight": {
+          '0%': { opacity: 0, transform: 'translateX(-20px)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
+        },
+        "fadeUp": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
 
       },
